@@ -1,0 +1,3806 @@
+{
+  "metadata": {
+    "har_file": "performance/har/navigation_pages.har",
+    "description": "API Inventory for UI page navigation flow across CMMA platform",
+    "flow": [
+      "My Actions",
+      "Projects",
+      "Workforce",
+      "Scheduling",
+      "Reports",
+      "Insights",
+      "Admin Console"
+    ],
+    "authentication_mechanism": "Cookie-based session (cmma_session JWT) plus x-tenant-slug header",
+    "summary": {
+      "total_requests": 162,
+      "page_business_api_count": 26,
+      "supporting_api_count": 43,
+      "auth_count": 4,
+      "static_count": 55,
+      "rsc_prefetch_count": 34,
+      "analytics_count": 0,
+      "third_party_count": 0,
+      "unknown_count": 0,
+      "total_excluded": 93
+    }
+  },
+  "business_and_supporting_apis": [
+    {
+      "request_sequence": 32,
+      "har_index": 32,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/api/dashboard/overview",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 33,
+      "har_index": 33,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/api/dashboard/comments",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 34,
+      "har_index": 34,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/api/users/me/preferences",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 35,
+      "har_index": 35,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/api/resource-trades",
+      "query_parameters": {
+        "includeNonRequestable": "false"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "includeNonRequestable"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 36,
+      "har_index": 36,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/api/workforce",
+      "query_parameters": {
+        "limit": "1"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "limit"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 37,
+      "har_index": 37,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/api/system/labels",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 42,
+      "har_index": 42,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/api/workforce/assignment-change-requests",
+      "query_parameters": {
+        "status": "PENDING",
+        "limit": "10"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "status",
+        "limit"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 43,
+      "har_index": 43,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/api/workforce/saved-views",
+      "query_parameters": {
+        "featureKey": "all"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "featureKey"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 101,
+      "har_index": 101,
+      "page_step": "Projects",
+      "http_method": "GET",
+      "url_path": "/api/workforce/saved-views",
+      "query_parameters": {
+        "featureKey": "projects-directory"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "featureKey"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 102,
+      "har_index": 102,
+      "page_step": "Projects",
+      "http_method": "GET",
+      "url_path": "/api/system/regions",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 103,
+      "har_index": 103,
+      "page_step": "Projects",
+      "http_method": "GET",
+      "url_path": "/api/system/custom-fields",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 104,
+      "har_index": 104,
+      "page_step": "Projects",
+      "http_method": "GET",
+      "url_path": "/api/system/statuses",
+      "query_parameters": {
+        "entityType": "PROJECT"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "entityType"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 105,
+      "har_index": 105,
+      "page_step": "Projects",
+      "http_method": "GET",
+      "url_path": "/api/client-accounts",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 106,
+      "har_index": 106,
+      "page_step": "Projects",
+      "http_method": "GET",
+      "url_path": "/api/projects",
+      "query_parameters": {
+        "limit": "25",
+        "offset": "0",
+        "sortBy": "name",
+        "sortOrder": "ASC"
+      },
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "limit",
+        "offset",
+        "sortBy",
+        "sortOrder"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 107,
+      "har_index": 107,
+      "page_step": "Projects",
+      "http_method": "GET",
+      "url_path": "/api/workforce/saved-views",
+      "query_parameters": {
+        "featureKey": "projects-directory"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "featureKey"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 108,
+      "har_index": 108,
+      "page_step": "Projects",
+      "http_method": "GET",
+      "url_path": "/api/system/regions",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 109,
+      "har_index": 109,
+      "page_step": "Projects",
+      "http_method": "GET",
+      "url_path": "/api/system/custom-fields",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 110,
+      "har_index": 110,
+      "page_step": "Projects",
+      "http_method": "GET",
+      "url_path": "/api/system/statuses",
+      "query_parameters": {
+        "entityType": "PROJECT"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "entityType"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 111,
+      "har_index": 111,
+      "page_step": "Projects",
+      "http_method": "GET",
+      "url_path": "/api/client-accounts",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 112,
+      "har_index": 112,
+      "page_step": "Projects",
+      "http_method": "GET",
+      "url_path": "/api/projects",
+      "query_parameters": {
+        "limit": "25",
+        "offset": "0",
+        "sortBy": "name",
+        "sortOrder": "ASC"
+      },
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "limit",
+        "offset",
+        "sortBy",
+        "sortOrder"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 113,
+      "har_index": 113,
+      "page_step": "Workforce",
+      "http_method": "GET",
+      "url_path": "/api/system/custom-fields",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 114,
+      "har_index": 114,
+      "page_step": "Workforce",
+      "http_method": "GET",
+      "url_path": "/api/resource-trades",
+      "query_parameters": {
+        "includeNonRequestable": "true"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "includeNonRequestable"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 115,
+      "har_index": 115,
+      "page_step": "Workforce",
+      "http_method": "GET",
+      "url_path": "/api/system/regions",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 116,
+      "har_index": 116,
+      "page_step": "Workforce",
+      "http_method": "GET",
+      "url_path": "/api/workforce",
+      "query_parameters": {
+        "limit": "25",
+        "offset": "0",
+        "sortBy": "name",
+        "sortOrder": "ASC",
+        "viewMode": "directory"
+      },
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "limit",
+        "offset",
+        "sortBy",
+        "sortOrder",
+        "viewMode"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 117,
+      "har_index": 117,
+      "page_step": "Workforce",
+      "http_method": "GET",
+      "url_path": "/api/workforce/saved-views",
+      "query_parameters": {
+        "featureKey": "workforce-directory"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "featureKey"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 118,
+      "har_index": 118,
+      "page_step": "Workforce",
+      "http_method": "GET",
+      "url_path": "/api/workforce",
+      "query_parameters": {
+        "trades": "ADMINISTRATION,CARPENTRY,CONCRETE,CRANE,DESIGN/VDC",
+        "limit": "25",
+        "offset": "0",
+        "sortBy": "name",
+        "sortOrder": "ASC",
+        "viewMode": "directory"
+      },
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "trades",
+        "limit",
+        "offset",
+        "sortBy",
+        "sortOrder",
+        "viewMode"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 119,
+      "har_index": 119,
+      "page_step": "Workforce",
+      "http_method": "GET",
+      "url_path": "/api/system/custom-fields",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 120,
+      "har_index": 120,
+      "page_step": "Workforce",
+      "http_method": "GET",
+      "url_path": "/api/resource-trades",
+      "query_parameters": {
+        "includeNonRequestable": "true"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "includeNonRequestable"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 121,
+      "har_index": 121,
+      "page_step": "Workforce",
+      "http_method": "GET",
+      "url_path": "/api/system/regions",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 122,
+      "har_index": 122,
+      "page_step": "Workforce",
+      "http_method": "GET",
+      "url_path": "/api/workforce",
+      "query_parameters": {
+        "limit": "25",
+        "offset": "0",
+        "sortBy": "name",
+        "sortOrder": "ASC",
+        "viewMode": "directory"
+      },
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "limit",
+        "offset",
+        "sortBy",
+        "sortOrder",
+        "viewMode"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 123,
+      "har_index": 123,
+      "page_step": "Workforce",
+      "http_method": "GET",
+      "url_path": "/api/workforce/saved-views",
+      "query_parameters": {
+        "featureKey": "workforce-directory"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "featureKey"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 124,
+      "har_index": 124,
+      "page_step": "Workforce",
+      "http_method": "GET",
+      "url_path": "/api/workforce",
+      "query_parameters": {
+        "trades": "ADMINISTRATION,CARPENTRY,CONCRETE,CRANE,DESIGN/VDC",
+        "limit": "25",
+        "offset": "0",
+        "sortBy": "name",
+        "sortOrder": "ASC",
+        "viewMode": "directory"
+      },
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "trades",
+        "limit",
+        "offset",
+        "sortBy",
+        "sortOrder",
+        "viewMode"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 125,
+      "har_index": 125,
+      "page_step": "Scheduling",
+      "http_method": "GET",
+      "url_path": "/api/workforce/assignments/schedule-grid",
+      "query_parameters": {
+        "startDate": "2026-09-02",
+        "endDate": "2026-12-09"
+      },
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "startDate",
+        "endDate"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 126,
+      "har_index": 126,
+      "page_step": "Scheduling",
+      "http_method": "GET",
+      "url_path": "/api/resource-trades",
+      "query_parameters": {
+        "includeNonRequestable": "false"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "includeNonRequestable"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 127,
+      "har_index": 127,
+      "page_step": "Scheduling",
+      "http_method": "GET",
+      "url_path": "/api/workforce/assignments/board",
+      "query_parameters": {
+        "startDate": "2026-09-02",
+        "endDate": "2026-12-09"
+      },
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "startDate",
+        "endDate"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 128,
+      "har_index": 128,
+      "page_step": "Scheduling",
+      "http_method": "GET",
+      "url_path": "/api/workforce/saved-views",
+      "query_parameters": {
+        "featureKey": "workforce-schedule"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "featureKey"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 129,
+      "har_index": 129,
+      "page_step": "Scheduling",
+      "http_method": "GET",
+      "url_path": "/api/workforce/assignments/schedule-grid",
+      "query_parameters": {
+        "startDate": "2026-09-02",
+        "endDate": "2026-12-09"
+      },
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "startDate",
+        "endDate"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 130,
+      "har_index": 130,
+      "page_step": "Scheduling",
+      "http_method": "GET",
+      "url_path": "/api/resource-trades",
+      "query_parameters": {
+        "includeNonRequestable": "false"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "includeNonRequestable"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 131,
+      "har_index": 131,
+      "page_step": "Scheduling",
+      "http_method": "GET",
+      "url_path": "/api/workforce/assignments/board",
+      "query_parameters": {
+        "startDate": "2026-09-02",
+        "endDate": "2026-12-09"
+      },
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "startDate",
+        "endDate"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 132,
+      "har_index": 132,
+      "page_step": "Scheduling",
+      "http_method": "GET",
+      "url_path": "/api/workforce/saved-views",
+      "query_parameters": {
+        "featureKey": "workforce-schedule"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "featureKey"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 133,
+      "har_index": 133,
+      "page_step": "Reports",
+      "http_method": "GET",
+      "url_path": "/api/projects",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 134,
+      "har_index": 134,
+      "page_step": "Reports",
+      "http_method": "GET",
+      "url_path": "/api/system/regions",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 135,
+      "har_index": 135,
+      "page_step": "Reports",
+      "http_method": "GET",
+      "url_path": "/api/workforce",
+      "query_parameters": {
+        "includeNextAvailable": "false"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "includeNextAvailable"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 136,
+      "har_index": 136,
+      "page_step": "Reports",
+      "http_method": "GET",
+      "url_path": "/api/resource-trades",
+      "query_parameters": {
+        "includeNonRequestable": "true"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "includeNonRequestable"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 137,
+      "har_index": 137,
+      "page_step": "Reports",
+      "http_method": "GET",
+      "url_path": "/api/workforce/saved-views",
+      "query_parameters": {
+        "featureKey": "reports-fulfillment"
+      },
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "featureKey"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 138,
+      "har_index": 138,
+      "page_step": "Reports",
+      "http_method": "GET",
+      "url_path": "/api/projects",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 139,
+      "har_index": 139,
+      "page_step": "Reports",
+      "http_method": "GET",
+      "url_path": "/api/system/regions",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 140,
+      "har_index": 140,
+      "page_step": "Reports",
+      "http_method": "GET",
+      "url_path": "/api/workforce",
+      "query_parameters": {
+        "includeNextAvailable": "false"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "includeNextAvailable"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 141,
+      "har_index": 141,
+      "page_step": "Reports",
+      "http_method": "GET",
+      "url_path": "/api/resource-trades",
+      "query_parameters": {
+        "includeNonRequestable": "true"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "includeNonRequestable"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 142,
+      "har_index": 142,
+      "page_step": "Reports",
+      "http_method": "GET",
+      "url_path": "/api/workforce/saved-views",
+      "query_parameters": {
+        "featureKey": "reports-fulfillment"
+      },
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "featureKey"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 143,
+      "har_index": 143,
+      "page_step": "Insights",
+      "http_method": "GET",
+      "url_path": "/api/workforce/assignments/board",
+      "query_parameters": {
+        "startDate": "2026-06-09",
+        "endDate": "2026-12-09"
+      },
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "startDate",
+        "endDate"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 144,
+      "har_index": 144,
+      "page_step": "Insights",
+      "http_method": "GET",
+      "url_path": "/api/resource-trades",
+      "query_parameters": {
+        "includeNonRequestable": "true"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "includeNonRequestable"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 145,
+      "har_index": 145,
+      "page_step": "Insights",
+      "http_method": "GET",
+      "url_path": "/api/workforce/saved-views",
+      "query_parameters": {
+        "featureKey": "insights-workforce"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "featureKey"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 146,
+      "har_index": 146,
+      "page_step": "Insights",
+      "http_method": "GET",
+      "url_path": "/api/projects",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 147,
+      "har_index": 147,
+      "page_step": "Insights",
+      "http_method": "GET",
+      "url_path": "/api/system/regions",
+      "query_parameters": {
+        "status": "active"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "status"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 148,
+      "har_index": 148,
+      "page_step": "Insights",
+      "http_method": "GET",
+      "url_path": "/api/system/lob",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 149,
+      "har_index": 149,
+      "page_step": "Insights",
+      "http_method": "GET",
+      "url_path": "/api/reporting/workforce/dashboard-summary",
+      "query_parameters": {
+        "startDate": "2026-01-01",
+        "endDate": "2026-12-31"
+      },
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "startDate",
+        "endDate"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 150,
+      "har_index": 150,
+      "page_step": "Insights",
+      "http_method": "GET",
+      "url_path": "/api/resource-trades",
+      "query_parameters": {
+        "includeNonRequestable": "true"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "includeNonRequestable"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 151,
+      "har_index": 151,
+      "page_step": "Insights",
+      "http_method": "GET",
+      "url_path": "/api/workforce/saved-views",
+      "query_parameters": {
+        "featureKey": "insights-workforce"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "featureKey"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 152,
+      "har_index": 152,
+      "page_step": "Insights",
+      "http_method": "GET",
+      "url_path": "/api/projects",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 153,
+      "har_index": 153,
+      "page_step": "Insights",
+      "http_method": "GET",
+      "url_path": "/api/system/regions",
+      "query_parameters": {
+        "status": "active"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "status"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 154,
+      "har_index": 154,
+      "page_step": "Insights",
+      "http_method": "GET",
+      "url_path": "/api/system/lob",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 155,
+      "har_index": 155,
+      "page_step": "Insights",
+      "http_method": "GET",
+      "url_path": "/api/reporting/workforce/dashboard-summary",
+      "query_parameters": {
+        "startDate": "2026-01-01",
+        "endDate": "2026-12-31"
+      },
+      "observed_http_status": -1,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "startDate",
+        "endDate"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 156,
+      "har_index": 156,
+      "page_step": "Admin Console",
+      "http_method": "GET",
+      "url_path": "/api/users/roles",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 157,
+      "har_index": 157,
+      "page_step": "Admin Console",
+      "http_method": "GET",
+      "url_path": "/api/users/roles",
+      "query_parameters": {},
+      "observed_http_status": -1,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 158,
+      "har_index": 158,
+      "page_step": "Admin Console",
+      "http_method": "GET",
+      "url_path": "/api/users",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 160,
+      "har_index": 160,
+      "page_step": "Admin Console",
+      "http_method": "GET",
+      "url_path": "/api/users/roles",
+      "query_parameters": {},
+      "observed_http_status": -1,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 161,
+      "har_index": 161,
+      "page_step": "Admin Console",
+      "http_method": "GET",
+      "url_path": "/api/users/roles",
+      "query_parameters": {},
+      "observed_http_status": -1,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 162,
+      "har_index": 162,
+      "page_step": "Admin Console",
+      "http_method": "GET",
+      "url_path": "/api/users",
+      "query_parameters": {},
+      "observed_http_status": -1,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    }
+  ],
+  "all_requests": [
+    {
+      "request_sequence": 1,
+      "har_index": 1,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 2,
+      "har_index": 2,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/0-8wgkz6yufop.css",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 3,
+      "har_index": 3,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/0fg2fzd~.5k.i.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 4,
+      "har_index": 4,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/14b-jbolxeyx..js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 5,
+      "har_index": 5,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/0hfw~zchjv985.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 6,
+      "har_index": 6,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/031k8csq6~796.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 7,
+      "har_index": 7,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/turbopack-0xe6_wk85l-mh.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 8,
+      "har_index": 8,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/0mkqz6sdmbk65.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 9,
+      "har_index": 9,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/0jvc2n6bc-391.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 10,
+      "har_index": 10,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/12.04oas2f3vs.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 11,
+      "har_index": 11,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/11z~edl8e6tkk.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 12,
+      "har_index": 12,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/0i.l9589uvx0j.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 13,
+      "har_index": 13,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/0x.qslhygg3po.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 14,
+      "har_index": 14,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/0tubory734icx.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 15,
+      "har_index": 15,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/0mvq0gw-l2zuc.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 16,
+      "har_index": 16,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/0vco4d917t7dy.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 17,
+      "har_index": 17,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/0ol_ychnyuscr.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 18,
+      "har_index": 18,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/0n7uk.z8y9lp0.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 19,
+      "har_index": 19,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/0xap-ed_prr4e.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 20,
+      "har_index": 20,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/04vlxnf7g3noa.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 21,
+      "har_index": 21,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/148yup~n5heem.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 22,
+      "har_index": 22,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/06v2s3yjfblvs.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 23,
+      "har_index": 23,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/0zlhvtyki2_qa.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 24,
+      "har_index": 24,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/0kf2awta.5cr5.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 25,
+      "har_index": 25,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/123_cs~91zl_o.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 26,
+      "har_index": 26,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/01_6.vks5l7uj.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 27,
+      "har_index": 27,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/0pq62t2r_5sgn.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 28,
+      "har_index": 28,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/api/auth/config",
+      "query_parameters": {
+        "slug": "danis-cmma-dev"
+      },
+      "observed_http_status": 200,
+      "classification": "AUTH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "slug"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 29,
+      "har_index": 29,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/api/auth/config",
+      "query_parameters": {
+        "slug": "danis-cmma-dev"
+      },
+      "observed_http_status": 200,
+      "classification": "AUTH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "slug"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 30,
+      "har_index": 30,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/api/session/status",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "AUTH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 31,
+      "har_index": 31,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/logo-uploads/logos/c5ce755a-c7c2-41eb-8ef2-e0c6ba342ac8.svg",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": false
+    },
+    {
+      "request_sequence": 32,
+      "har_index": 32,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/api/dashboard/overview",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 33,
+      "har_index": 33,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/api/dashboard/comments",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 34,
+      "har_index": 34,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/api/users/me/preferences",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 35,
+      "har_index": 35,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/api/resource-trades",
+      "query_parameters": {
+        "includeNonRequestable": "false"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "includeNonRequestable"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 36,
+      "har_index": 36,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/api/workforce",
+      "query_parameters": {
+        "limit": "1"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "limit"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 37,
+      "har_index": 37,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/api/system/labels",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 38,
+      "har_index": 38,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/settings",
+      "query_parameters": {
+        "_rsc": "5CB68i4pnAekjehf"
+      },
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 39,
+      "har_index": 39,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/admin",
+      "query_parameters": {
+        "_rsc": "5CB68i4pnAekjehf"
+      },
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 40,
+      "har_index": 40,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/insights",
+      "query_parameters": {
+        "_rsc": "5CB68i4pnAekjehf"
+      },
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 41,
+      "har_index": 41,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/reports",
+      "query_parameters": {
+        "_rsc": "5CB68i4pnAekjehf"
+      },
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 42,
+      "har_index": 42,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/api/workforce/assignment-change-requests",
+      "query_parameters": {
+        "status": "PENDING",
+        "limit": "10"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "status",
+        "limit"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 43,
+      "har_index": 43,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/api/workforce/saved-views",
+      "query_parameters": {
+        "featureKey": "all"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "featureKey"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 44,
+      "har_index": 44,
+      "page_step": "Projects",
+      "http_method": "GET",
+      "url_path": "/projects",
+      "query_parameters": {
+        "filter": "needing-attention",
+        "_rsc": "5CB68i4pnAekjehf"
+      },
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 45,
+      "har_index": 45,
+      "page_step": "Scheduling",
+      "http_method": "GET",
+      "url_path": "/scheduling",
+      "query_parameters": {
+        "_rsc": "5CB68i4pnAekjehf"
+      },
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 46,
+      "har_index": 46,
+      "page_step": "Workforce",
+      "http_method": "GET",
+      "url_path": "/resources",
+      "query_parameters": {
+        "_rsc": "5CB68i4pnAekjehf"
+      },
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 47,
+      "har_index": 47,
+      "page_step": "Projects",
+      "http_method": "GET",
+      "url_path": "/projects",
+      "query_parameters": {
+        "_rsc": "5CB68i4pnAekjehf"
+      },
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 48,
+      "har_index": 48,
+      "page_step": "Projects",
+      "http_method": "GET",
+      "url_path": "/projects",
+      "query_parameters": {
+        "filter": "needing-attention",
+        "_rsc": "7h4NYy5eoyMcNlUN"
+      },
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 49,
+      "har_index": 49,
+      "page_step": "Projects",
+      "http_method": "GET",
+      "url_path": "/projects",
+      "query_parameters": {
+        "filter": "needing-attention",
+        "_rsc": "yIp22O3xgPPxC28X"
+      },
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 50,
+      "har_index": 50,
+      "page_step": "Projects",
+      "http_method": "GET",
+      "url_path": "/projects",
+      "query_parameters": {
+        "filter": "needing-attention",
+        "_rsc": "zZ7aKgXCxxeEeXr0"
+      },
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 51,
+      "har_index": 51,
+      "page_step": "Projects",
+      "http_method": "GET",
+      "url_path": "/projects",
+      "query_parameters": {
+        "filter": "needing-attention",
+        "_rsc": "ovuwaeB2NA2FiGK9"
+      },
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 52,
+      "har_index": 52,
+      "page_step": "Projects",
+      "http_method": "GET",
+      "url_path": "/projects",
+      "query_parameters": {
+        "filter": "needing-attention",
+        "_rsc": "hu5uIu7IetZacmBh"
+      },
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 53,
+      "har_index": 53,
+      "page_step": "Settings",
+      "http_method": "GET",
+      "url_path": "/settings",
+      "query_parameters": {
+        "_rsc": "7h4NYy5eoyMcNlUN"
+      },
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 54,
+      "har_index": 54,
+      "page_step": "Settings",
+      "http_method": "GET",
+      "url_path": "/settings",
+      "query_parameters": {
+        "_rsc": "aobZvxIgTm8CTxMj"
+      },
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 55,
+      "har_index": 55,
+      "page_step": "Settings",
+      "http_method": "GET",
+      "url_path": "/settings",
+      "query_parameters": {
+        "_rsc": "_Yc9uVuDIsFddblI"
+      },
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 56,
+      "har_index": 56,
+      "page_step": "Global / Initialization",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/0vhk.i2mic-oe.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 57,
+      "har_index": 57,
+      "page_step": "Global / Initialization",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/02mo1u700nwz1.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 58,
+      "har_index": 58,
+      "page_step": "Global / Initialization",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/00u_sf~_ti2~8.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 59,
+      "har_index": 59,
+      "page_step": "Global / Initialization",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/10zh-yzkmyub~.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 60,
+      "har_index": 60,
+      "page_step": "Admin Console",
+      "http_method": "GET",
+      "url_path": "/admin",
+      "query_parameters": {
+        "_rsc": "7h4NYy5eoyMcNlUN"
+      },
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 61,
+      "har_index": 61,
+      "page_step": "Admin Console",
+      "http_method": "GET",
+      "url_path": "/admin",
+      "query_parameters": {
+        "_rsc": "tZMc6tXDv2GEJ40B"
+      },
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 62,
+      "har_index": 62,
+      "page_step": "Admin Console",
+      "http_method": "GET",
+      "url_path": "/admin",
+      "query_parameters": {
+        "_rsc": "FzgvpUtA75RXi1T1"
+      },
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 63,
+      "har_index": 63,
+      "page_step": "Global / Initialization",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/0cfp-sxfvbaj5.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 64,
+      "har_index": 64,
+      "page_step": "Insights",
+      "http_method": "GET",
+      "url_path": "/insights",
+      "query_parameters": {
+        "_rsc": "7h4NYy5eoyMcNlUN"
+      },
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 65,
+      "har_index": 65,
+      "page_step": "Insights",
+      "http_method": "GET",
+      "url_path": "/insights",
+      "query_parameters": {
+        "_rsc": "Cq3qx-_o2hSakg-w"
+      },
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 66,
+      "har_index": 66,
+      "page_step": "Insights",
+      "http_method": "GET",
+      "url_path": "/insights",
+      "query_parameters": {
+        "_rsc": "0xIRRLcOkkak00O9"
+      },
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 67,
+      "har_index": 67,
+      "page_step": "Global / Initialization",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/1397-2ba297ju.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 68,
+      "har_index": 68,
+      "page_step": "Global / Initialization",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/01~.nfc_1od.6.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 69,
+      "har_index": 69,
+      "page_step": "Global / Initialization",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/18bvn-qyrb8yb.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 70,
+      "har_index": 70,
+      "page_step": "Global / Initialization",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/0330g5hxh2-7t.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 71,
+      "har_index": 71,
+      "page_step": "Global / Initialization",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/0ngu20nbh-rj-.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 72,
+      "har_index": 72,
+      "page_step": "Reports",
+      "http_method": "GET",
+      "url_path": "/reports",
+      "query_parameters": {
+        "_rsc": "7h4NYy5eoyMcNlUN"
+      },
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 73,
+      "har_index": 73,
+      "page_step": "Reports",
+      "http_method": "GET",
+      "url_path": "/reports",
+      "query_parameters": {
+        "_rsc": "PVXKehn9JgTPAxuI"
+      },
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 74,
+      "har_index": 74,
+      "page_step": "Reports",
+      "http_method": "GET",
+      "url_path": "/reports",
+      "query_parameters": {
+        "_rsc": "QkbTYIdjFoqSZAt7"
+      },
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 75,
+      "har_index": 75,
+      "page_step": "Global / Initialization",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/0fcyqak3m7n77.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 76,
+      "har_index": 76,
+      "page_step": "Global / Initialization",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/04gnww93tkxws.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 77,
+      "har_index": 77,
+      "page_step": "Global / Initialization",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/0qwf996w2ovl6.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 78,
+      "har_index": 78,
+      "page_step": "Scheduling",
+      "http_method": "GET",
+      "url_path": "/scheduling",
+      "query_parameters": {
+        "_rsc": "7h4NYy5eoyMcNlUN"
+      },
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 79,
+      "har_index": 79,
+      "page_step": "Scheduling",
+      "http_method": "GET",
+      "url_path": "/scheduling",
+      "query_parameters": {
+        "_rsc": "18CWVgUvHxNKSH1N"
+      },
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 80,
+      "har_index": 80,
+      "page_step": "Scheduling",
+      "http_method": "GET",
+      "url_path": "/scheduling",
+      "query_parameters": {
+        "_rsc": "nqPCImaiDUowGW07"
+      },
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 81,
+      "har_index": 81,
+      "page_step": "Global / Initialization",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/11l83ek~9u7pe.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 82,
+      "har_index": 82,
+      "page_step": "Global / Initialization",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/04ytcn3hohc5s.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 83,
+      "har_index": 83,
+      "page_step": "Global / Initialization",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/087-jezocls7z.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 84,
+      "har_index": 84,
+      "page_step": "Global / Initialization",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/043qi3t5_syf1.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 85,
+      "har_index": 85,
+      "page_step": "Global / Initialization",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/0b9ya119aexhu.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 86,
+      "har_index": 86,
+      "page_step": "Workforce",
+      "http_method": "GET",
+      "url_path": "/resources",
+      "query_parameters": {
+        "_rsc": "7h4NYy5eoyMcNlUN"
+      },
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 87,
+      "har_index": 87,
+      "page_step": "Workforce",
+      "http_method": "GET",
+      "url_path": "/resources",
+      "query_parameters": {
+        "_rsc": "ykjrKEqKWPeZ9Vkr"
+      },
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 88,
+      "har_index": 88,
+      "page_step": "Workforce",
+      "http_method": "GET",
+      "url_path": "/resources",
+      "query_parameters": {
+        "_rsc": "6ClDE3QbHJBBfQfu"
+      },
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 89,
+      "har_index": 89,
+      "page_step": "Global / Initialization",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/0sjyyk8wq6vrv.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 90,
+      "har_index": 90,
+      "page_step": "Global / Initialization",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/057.ehbvkj.a~.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 91,
+      "har_index": 91,
+      "page_step": "Global / Initialization",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/13ymd4f5u492d.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 92,
+      "har_index": 92,
+      "page_step": "Global / Initialization",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/0uupd1aqbyqe_.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 93,
+      "har_index": 93,
+      "page_step": "Global / Initialization",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/0lq4jb-v0wzxv.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 94,
+      "har_index": 94,
+      "page_step": "Global / Initialization",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/0.zx0mxhn4xmb.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 95,
+      "har_index": 95,
+      "page_step": "Global / Initialization",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/0xg1l_-ty5mzu.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 96,
+      "har_index": 96,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/",
+      "query_parameters": {
+        "_rsc": "7h4NYy5eoyMcNlUN"
+      },
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 97,
+      "har_index": 97,
+      "page_step": "My Actions",
+      "http_method": "GET",
+      "url_path": "/",
+      "query_parameters": {
+        "_rsc": "lxbBaZJUjdur4gLV"
+      },
+      "observed_http_status": 200,
+      "classification": "RSC_OR_PREFETCH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 98,
+      "har_index": 98,
+      "page_step": "Global / Initialization",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/0yt3180w2~5ny.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 99,
+      "har_index": 99,
+      "page_step": "Global / Initialization",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/10kuig47v7b9a.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 100,
+      "har_index": 100,
+      "page_step": "Global / Initialization",
+      "http_method": "GET",
+      "url_path": "/_next/static/chunks/176qygtcmw-.k.js",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "STATIC",
+      "required_for_page_load": false,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 101,
+      "har_index": 101,
+      "page_step": "Projects",
+      "http_method": "GET",
+      "url_path": "/api/workforce/saved-views",
+      "query_parameters": {
+        "featureKey": "projects-directory"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "featureKey"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 102,
+      "har_index": 102,
+      "page_step": "Projects",
+      "http_method": "GET",
+      "url_path": "/api/system/regions",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 103,
+      "har_index": 103,
+      "page_step": "Projects",
+      "http_method": "GET",
+      "url_path": "/api/system/custom-fields",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 104,
+      "har_index": 104,
+      "page_step": "Projects",
+      "http_method": "GET",
+      "url_path": "/api/system/statuses",
+      "query_parameters": {
+        "entityType": "PROJECT"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "entityType"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 105,
+      "har_index": 105,
+      "page_step": "Projects",
+      "http_method": "GET",
+      "url_path": "/api/client-accounts",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 106,
+      "har_index": 106,
+      "page_step": "Projects",
+      "http_method": "GET",
+      "url_path": "/api/projects",
+      "query_parameters": {
+        "limit": "25",
+        "offset": "0",
+        "sortBy": "name",
+        "sortOrder": "ASC"
+      },
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "limit",
+        "offset",
+        "sortBy",
+        "sortOrder"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 107,
+      "har_index": 107,
+      "page_step": "Projects",
+      "http_method": "GET",
+      "url_path": "/api/workforce/saved-views",
+      "query_parameters": {
+        "featureKey": "projects-directory"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "featureKey"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 108,
+      "har_index": 108,
+      "page_step": "Projects",
+      "http_method": "GET",
+      "url_path": "/api/system/regions",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 109,
+      "har_index": 109,
+      "page_step": "Projects",
+      "http_method": "GET",
+      "url_path": "/api/system/custom-fields",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 110,
+      "har_index": 110,
+      "page_step": "Projects",
+      "http_method": "GET",
+      "url_path": "/api/system/statuses",
+      "query_parameters": {
+        "entityType": "PROJECT"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "entityType"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 111,
+      "har_index": 111,
+      "page_step": "Projects",
+      "http_method": "GET",
+      "url_path": "/api/client-accounts",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 112,
+      "har_index": 112,
+      "page_step": "Projects",
+      "http_method": "GET",
+      "url_path": "/api/projects",
+      "query_parameters": {
+        "limit": "25",
+        "offset": "0",
+        "sortBy": "name",
+        "sortOrder": "ASC"
+      },
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "limit",
+        "offset",
+        "sortBy",
+        "sortOrder"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 113,
+      "har_index": 113,
+      "page_step": "Workforce",
+      "http_method": "GET",
+      "url_path": "/api/system/custom-fields",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 114,
+      "har_index": 114,
+      "page_step": "Workforce",
+      "http_method": "GET",
+      "url_path": "/api/resource-trades",
+      "query_parameters": {
+        "includeNonRequestable": "true"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "includeNonRequestable"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 115,
+      "har_index": 115,
+      "page_step": "Workforce",
+      "http_method": "GET",
+      "url_path": "/api/system/regions",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 116,
+      "har_index": 116,
+      "page_step": "Workforce",
+      "http_method": "GET",
+      "url_path": "/api/workforce",
+      "query_parameters": {
+        "limit": "25",
+        "offset": "0",
+        "sortBy": "name",
+        "sortOrder": "ASC",
+        "viewMode": "directory"
+      },
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "limit",
+        "offset",
+        "sortBy",
+        "sortOrder",
+        "viewMode"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 117,
+      "har_index": 117,
+      "page_step": "Workforce",
+      "http_method": "GET",
+      "url_path": "/api/workforce/saved-views",
+      "query_parameters": {
+        "featureKey": "workforce-directory"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "featureKey"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 118,
+      "har_index": 118,
+      "page_step": "Workforce",
+      "http_method": "GET",
+      "url_path": "/api/workforce",
+      "query_parameters": {
+        "trades": "ADMINISTRATION,CARPENTRY,CONCRETE,CRANE,DESIGN/VDC",
+        "limit": "25",
+        "offset": "0",
+        "sortBy": "name",
+        "sortOrder": "ASC",
+        "viewMode": "directory"
+      },
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "trades",
+        "limit",
+        "offset",
+        "sortBy",
+        "sortOrder",
+        "viewMode"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 119,
+      "har_index": 119,
+      "page_step": "Workforce",
+      "http_method": "GET",
+      "url_path": "/api/system/custom-fields",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 120,
+      "har_index": 120,
+      "page_step": "Workforce",
+      "http_method": "GET",
+      "url_path": "/api/resource-trades",
+      "query_parameters": {
+        "includeNonRequestable": "true"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "includeNonRequestable"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 121,
+      "har_index": 121,
+      "page_step": "Workforce",
+      "http_method": "GET",
+      "url_path": "/api/system/regions",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 122,
+      "har_index": 122,
+      "page_step": "Workforce",
+      "http_method": "GET",
+      "url_path": "/api/workforce",
+      "query_parameters": {
+        "limit": "25",
+        "offset": "0",
+        "sortBy": "name",
+        "sortOrder": "ASC",
+        "viewMode": "directory"
+      },
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "limit",
+        "offset",
+        "sortBy",
+        "sortOrder",
+        "viewMode"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 123,
+      "har_index": 123,
+      "page_step": "Workforce",
+      "http_method": "GET",
+      "url_path": "/api/workforce/saved-views",
+      "query_parameters": {
+        "featureKey": "workforce-directory"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "featureKey"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 124,
+      "har_index": 124,
+      "page_step": "Workforce",
+      "http_method": "GET",
+      "url_path": "/api/workforce",
+      "query_parameters": {
+        "trades": "ADMINISTRATION,CARPENTRY,CONCRETE,CRANE,DESIGN/VDC",
+        "limit": "25",
+        "offset": "0",
+        "sortBy": "name",
+        "sortOrder": "ASC",
+        "viewMode": "directory"
+      },
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "trades",
+        "limit",
+        "offset",
+        "sortBy",
+        "sortOrder",
+        "viewMode"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 125,
+      "har_index": 125,
+      "page_step": "Scheduling",
+      "http_method": "GET",
+      "url_path": "/api/workforce/assignments/schedule-grid",
+      "query_parameters": {
+        "startDate": "2026-09-02",
+        "endDate": "2026-12-09"
+      },
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "startDate",
+        "endDate"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 126,
+      "har_index": 126,
+      "page_step": "Scheduling",
+      "http_method": "GET",
+      "url_path": "/api/resource-trades",
+      "query_parameters": {
+        "includeNonRequestable": "false"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "includeNonRequestable"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 127,
+      "har_index": 127,
+      "page_step": "Scheduling",
+      "http_method": "GET",
+      "url_path": "/api/workforce/assignments/board",
+      "query_parameters": {
+        "startDate": "2026-09-02",
+        "endDate": "2026-12-09"
+      },
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "startDate",
+        "endDate"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 128,
+      "har_index": 128,
+      "page_step": "Scheduling",
+      "http_method": "GET",
+      "url_path": "/api/workforce/saved-views",
+      "query_parameters": {
+        "featureKey": "workforce-schedule"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "featureKey"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 129,
+      "har_index": 129,
+      "page_step": "Scheduling",
+      "http_method": "GET",
+      "url_path": "/api/workforce/assignments/schedule-grid",
+      "query_parameters": {
+        "startDate": "2026-09-02",
+        "endDate": "2026-12-09"
+      },
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "startDate",
+        "endDate"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 130,
+      "har_index": 130,
+      "page_step": "Scheduling",
+      "http_method": "GET",
+      "url_path": "/api/resource-trades",
+      "query_parameters": {
+        "includeNonRequestable": "false"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "includeNonRequestable"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 131,
+      "har_index": 131,
+      "page_step": "Scheduling",
+      "http_method": "GET",
+      "url_path": "/api/workforce/assignments/board",
+      "query_parameters": {
+        "startDate": "2026-09-02",
+        "endDate": "2026-12-09"
+      },
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "startDate",
+        "endDate"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 132,
+      "har_index": 132,
+      "page_step": "Scheduling",
+      "http_method": "GET",
+      "url_path": "/api/workforce/saved-views",
+      "query_parameters": {
+        "featureKey": "workforce-schedule"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "featureKey"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 133,
+      "har_index": 133,
+      "page_step": "Reports",
+      "http_method": "GET",
+      "url_path": "/api/projects",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 134,
+      "har_index": 134,
+      "page_step": "Reports",
+      "http_method": "GET",
+      "url_path": "/api/system/regions",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 135,
+      "har_index": 135,
+      "page_step": "Reports",
+      "http_method": "GET",
+      "url_path": "/api/workforce",
+      "query_parameters": {
+        "includeNextAvailable": "false"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "includeNextAvailable"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 136,
+      "har_index": 136,
+      "page_step": "Reports",
+      "http_method": "GET",
+      "url_path": "/api/resource-trades",
+      "query_parameters": {
+        "includeNonRequestable": "true"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "includeNonRequestable"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 137,
+      "har_index": 137,
+      "page_step": "Reports",
+      "http_method": "GET",
+      "url_path": "/api/workforce/saved-views",
+      "query_parameters": {
+        "featureKey": "reports-fulfillment"
+      },
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "featureKey"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 138,
+      "har_index": 138,
+      "page_step": "Reports",
+      "http_method": "GET",
+      "url_path": "/api/projects",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 139,
+      "har_index": 139,
+      "page_step": "Reports",
+      "http_method": "GET",
+      "url_path": "/api/system/regions",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 140,
+      "har_index": 140,
+      "page_step": "Reports",
+      "http_method": "GET",
+      "url_path": "/api/workforce",
+      "query_parameters": {
+        "includeNextAvailable": "false"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "includeNextAvailable"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 141,
+      "har_index": 141,
+      "page_step": "Reports",
+      "http_method": "GET",
+      "url_path": "/api/resource-trades",
+      "query_parameters": {
+        "includeNonRequestable": "true"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "includeNonRequestable"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 142,
+      "har_index": 142,
+      "page_step": "Reports",
+      "http_method": "GET",
+      "url_path": "/api/workforce/saved-views",
+      "query_parameters": {
+        "featureKey": "reports-fulfillment"
+      },
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "featureKey"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 143,
+      "har_index": 143,
+      "page_step": "Insights",
+      "http_method": "GET",
+      "url_path": "/api/workforce/assignments/board",
+      "query_parameters": {
+        "startDate": "2026-06-09",
+        "endDate": "2026-12-09"
+      },
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "startDate",
+        "endDate"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 144,
+      "har_index": 144,
+      "page_step": "Insights",
+      "http_method": "GET",
+      "url_path": "/api/resource-trades",
+      "query_parameters": {
+        "includeNonRequestable": "true"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "includeNonRequestable"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 145,
+      "har_index": 145,
+      "page_step": "Insights",
+      "http_method": "GET",
+      "url_path": "/api/workforce/saved-views",
+      "query_parameters": {
+        "featureKey": "insights-workforce"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "featureKey"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 146,
+      "har_index": 146,
+      "page_step": "Insights",
+      "http_method": "GET",
+      "url_path": "/api/projects",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 147,
+      "har_index": 147,
+      "page_step": "Insights",
+      "http_method": "GET",
+      "url_path": "/api/system/regions",
+      "query_parameters": {
+        "status": "active"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "status"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 148,
+      "har_index": 148,
+      "page_step": "Insights",
+      "http_method": "GET",
+      "url_path": "/api/system/lob",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 149,
+      "har_index": 149,
+      "page_step": "Insights",
+      "http_method": "GET",
+      "url_path": "/api/reporting/workforce/dashboard-summary",
+      "query_parameters": {
+        "startDate": "2026-01-01",
+        "endDate": "2026-12-31"
+      },
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "startDate",
+        "endDate"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 150,
+      "har_index": 150,
+      "page_step": "Insights",
+      "http_method": "GET",
+      "url_path": "/api/resource-trades",
+      "query_parameters": {
+        "includeNonRequestable": "true"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "includeNonRequestable"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 151,
+      "har_index": 151,
+      "page_step": "Insights",
+      "http_method": "GET",
+      "url_path": "/api/workforce/saved-views",
+      "query_parameters": {
+        "featureKey": "insights-workforce"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "featureKey"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 152,
+      "har_index": 152,
+      "page_step": "Insights",
+      "http_method": "GET",
+      "url_path": "/api/projects",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 153,
+      "har_index": 153,
+      "page_step": "Insights",
+      "http_method": "GET",
+      "url_path": "/api/system/regions",
+      "query_parameters": {
+        "status": "active"
+      },
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "status"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 154,
+      "har_index": 154,
+      "page_step": "Insights",
+      "http_method": "GET",
+      "url_path": "/api/system/lob",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "SUPPORTING_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 155,
+      "har_index": 155,
+      "page_step": "Insights",
+      "http_method": "GET",
+      "url_path": "/api/reporting/workforce/dashboard-summary",
+      "query_parameters": {
+        "startDate": "2026-01-01",
+        "endDate": "2026-12-31"
+      },
+      "observed_http_status": -1,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "startDate",
+        "endDate"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 156,
+      "har_index": 156,
+      "page_step": "Admin Console",
+      "http_method": "GET",
+      "url_path": "/api/users/roles",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 157,
+      "har_index": 157,
+      "page_step": "Admin Console",
+      "http_method": "GET",
+      "url_path": "/api/users/roles",
+      "query_parameters": {},
+      "observed_http_status": -1,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 158,
+      "har_index": 158,
+      "page_step": "Admin Console",
+      "http_method": "GET",
+      "url_path": "/api/users",
+      "query_parameters": {},
+      "observed_http_status": 200,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 159,
+      "har_index": 159,
+      "page_step": "Admin Console",
+      "http_method": "GET",
+      "url_path": "/api/auth/config",
+      "query_parameters": {
+        "slug": "platform"
+      },
+      "observed_http_status": 200,
+      "classification": "AUTH",
+      "required_for_page_load": false,
+      "dynamic_ids_present": true,
+      "dynamic_parameter_names": [
+        "slug"
+      ],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 160,
+      "har_index": 160,
+      "page_step": "Admin Console",
+      "http_method": "GET",
+      "url_path": "/api/users/roles",
+      "query_parameters": {},
+      "observed_http_status": -1,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 161,
+      "har_index": 161,
+      "page_step": "Admin Console",
+      "http_method": "GET",
+      "url_path": "/api/users/roles",
+      "query_parameters": {},
+      "observed_http_status": -1,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    },
+    {
+      "request_sequence": 162,
+      "har_index": 162,
+      "page_step": "Admin Console",
+      "http_method": "GET",
+      "url_path": "/api/users",
+      "query_parameters": {},
+      "observed_http_status": -1,
+      "classification": "PAGE_BUSINESS_API",
+      "required_for_page_load": true,
+      "dynamic_ids_present": false,
+      "dynamic_parameter_names": [],
+      "auth_required": true
+    }
+  ]
+}

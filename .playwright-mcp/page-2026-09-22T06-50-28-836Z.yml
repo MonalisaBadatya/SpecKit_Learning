@@ -1,0 +1,18 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - heading [level=5]
+      - paragraph [ref=e10]: Workforce planning and employee assignment suite.
+    - generic [ref=e11]:
+      - progressbar [ref=e12]
+      - generic [ref=e15]:
+        - heading "Setting up your session" [level=6] [ref=e16]
+        - paragraph [ref=e17]: Please wait while we secure your connection.
+    - generic [ref=e18]:
+      - generic [ref=e19]: Security & Encryption
+      - generic [ref=e20]:
+        - paragraph [ref=e25]: 256-BIT SSL
+        - paragraph [ref=e26]: •
+        - paragraph [ref=e32]: ENTRA SSO READY
+    - generic [ref=e33]: © 2026 . All rights reserved.
+  - alert [ref=e35]

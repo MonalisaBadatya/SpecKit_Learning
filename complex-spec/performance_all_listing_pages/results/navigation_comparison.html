@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CMMA Navigation Performance Comparison</title>
+<style>
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f6f7f9;
+    color: #222;
+}
+
+.container {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 28px;
+}
+
+h1 {
+    margin-bottom: 8px;
+}
+
+h2 {
+    margin-top: 34px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 8px;
+}
+
+h3 {
+    margin-top: 24px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin: 14px 0 26px 0;
+}
+
+th, td {
+    border: 1px solid #d8dce1;
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background: #eef1f4;
+    font-weight: 600;
+}
+
+tr:nth-child(even) td {
+    background: #fafbfc;
+}
+
+.status {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.status.pass {
+    background: #dff3e4;
+    color: #176b2c;
+}
+
+.status.fail {
+    background: #fbe1e1;
+    color: #a11a1a;
+}
+
+.status.check {
+    background: #fff0c2;
+    color: #755600;
+}
+
+.status.invalid {
+    background: #eadcf8;
+    color: #5d2a82;
+}
+
+.status.na {
+    background: #e8eaed;
+    color: #555;
+}
+
+.small {
+    font-size: 12px;
+    color: #666;
+}
+
+code {
+    font-family: Consolas, monospace;
+    font-size: 12px;
+}
+
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<h1>CMMA Navigation Performance Comparison</h1>
+<p class="small">API and UI performance are compared by workload. No charts or graphs are used.</p>
+<table><thead><tr><th>Workload</th><th>API Requests</th><th>API p95</th><th>API p99</th><th>API Error %</th><th>API Performance</th><th>UI Navigation Samples</th><th>UI Navigation p95</th><th>UI Navigation p99</th><th>UI Performance</th></tr></thead><tbody><tr><td>1 VU / 1 iter</td><td>0</td><td>8620.87 ms</td><td>13117.12 ms</td><td>0.00%</td><td><span class="status fail">FAIL</span></td><td>0</td><td>3647.80 ms</td><td>3838.36 ms</td><td><span class="status fail">FAIL</span></td></tr><tr><td>1 VU / 5 iter</td><td>0</td><td>9482.98 ms</td><td>14888.06 ms</td><td>0.00%</td><td><span class="status fail">FAIL</span></td><td>N/A</td><td>N/A</td><td>N/A</td><td><span class="status na">N/A</span></td></tr><tr><td>5 VU / 5 iter</td><td>0</td><td>7471.57 ms</td><td>20572.14 ms</td><td>53.00%</td><td><span class="status fail">FAIL</span></td><td>0</td><td>4342.10 ms</td><td>4767.42 ms</td><td><span class="status fail">FAIL</span></td></tr><tr><td>25 VU / 5 iter</td><td>0</td><td>4631.18 ms</td><td>9338.53 ms</td><td>0.00%</td><td><span class="status fail">FAIL</span></td><td>0</td><td>182968.60 ms</td><td>237707.08 ms</td><td><span class="status fail">FAIL</span></td></tr></tbody></table>
+<h2>Comparison Notes</h2>
+<ul>
+<li>API Performance is based on the API workload performance checks.</li>
+<li>UI Performance is based on UI checks, page success, browser HTTP failures, navigation p95 and navigation p99.</li>
+<li>Web Vitals are observational and are not used as a blocking performance gate.</li>
+</ul>
+
+</div>
+</body>
+</html>

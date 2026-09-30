@@ -1,0 +1,207 @@
+{
+  "meta": {
+    "feature": "UI Navigation Performance",
+    "base_url": "https://danis-cmma-dev.cosdevx.com",
+    "vus": 25,
+    "iterations": 5,
+    "workload": "25vu_5iter",
+    "timestamp": "2026-09-29T10:26:14.742Z",
+    "generated_at": "2026-09-29T10:26:14.742Z",
+    "generated_by": "k6/browser",
+    "sensitive_values_included": false
+  },
+  "document_information": {
+    "document": "UI Navigation Performance Test Report",
+    "feature": "Authenticated UI Navigation",
+    "environment": "https://danis-cmma-dev.cosdevx.com",
+    "workload": "25vu_5iter",
+    "navigation_model": "Sidebar navigation",
+    "page_count": 7
+  },
+  "execution_summary": {
+    "status": "FAIL",
+    "total_pages": 7,
+    "passed_pages": 0,
+    "failed_pages": 0,
+    "page_success_rate": 0.8824,
+    "navigation_samples": 689,
+    "navigation_p95_ms": 182968.6,
+    "navigation_p99_ms": 237707.08,
+    "browser_http_total": 0,
+    "browser_http_failed": 0,
+    "browser_http_failure_rate": 0.0145
+  },
+  "performance_targets": {
+    "ui_navigation_p95_ms": 2000,
+    "ui_navigation_p99_ms": 3500,
+    "ui_page_success_rate": 0.99,
+    "browser_http_failed_rate": 0.01,
+    "web_vitals": {
+      "lcp_ms": 2500,
+      "fcp_ms": 1800,
+      "ttfb_ms": 800,
+      "inp_ms": 200,
+      "cls": 0.1
+    }
+  },
+  "threshold_status": {
+    "checks": {
+      "actual_rate": 0.8824,
+      "target": 1,
+      "status": "FAIL"
+    },
+    "ui_page_success_rate": {
+      "actual_rate": 0.8824,
+      "target": 0.99,
+      "status": "FAIL"
+    },
+    "browser_http_req_failed": {
+      "actual_rate": 0.0145,
+      "target": 0.01,
+      "status": "FAIL"
+    },
+    "ui_navigation_duration_p95": {
+      "actual_ms": 182968.6,
+      "target_ms": 2000,
+      "status": "FAIL"
+    },
+    "ui_navigation_duration_p99": {
+      "actual_ms": 237707.08,
+      "target_ms": 3500,
+      "status": "FAIL"
+    },
+    "web_vitals": {
+      "blocking": false,
+      "note": "Web Vitals are observational and do not determine overall PASS/FAIL."
+    }
+  },
+  "page_results": [
+    {
+      "page": "My Actions",
+      "type": "landing",
+      "expected_navigation": false,
+      "nav_locator": null,
+      "expected_heading": "My Actions",
+      "executions": 0,
+      "passed": 0,
+      "failed": 0,
+      "average_duration_ms": null,
+      "min_duration_ms": null,
+      "max_duration_ms": null
+    },
+    {
+      "page": "Projects",
+      "type": "navigation",
+      "expected_navigation": true,
+      "nav_locator": "nav[aria-label=\"Primary\"] a[href=\"/projects\"]",
+      "expected_heading": "Projects",
+      "executions": 0,
+      "passed": 0,
+      "failed": 0,
+      "average_duration_ms": null,
+      "min_duration_ms": null,
+      "max_duration_ms": null
+    },
+    {
+      "page": "Workforce",
+      "type": "navigation",
+      "expected_navigation": true,
+      "nav_locator": "nav[aria-label=\"Primary\"] a[href=\"/resources\"]",
+      "expected_heading": "Workforce Directory",
+      "executions": 0,
+      "passed": 0,
+      "failed": 0,
+      "average_duration_ms": null,
+      "min_duration_ms": null,
+      "max_duration_ms": null
+    },
+    {
+      "page": "Scheduling",
+      "type": "navigation",
+      "expected_navigation": true,
+      "nav_locator": "nav[aria-label=\"Primary\"] a[href=\"/scheduling\"]",
+      "expected_heading": "Scheduling",
+      "executions": 0,
+      "passed": 0,
+      "failed": 0,
+      "average_duration_ms": null,
+      "min_duration_ms": null,
+      "max_duration_ms": null
+    },
+    {
+      "page": "Reports",
+      "type": "navigation",
+      "expected_navigation": true,
+      "nav_locator": "nav[aria-label=\"Primary\"] a[href=\"/reports\"]",
+      "expected_heading": "Reports",
+      "executions": 0,
+      "passed": 0,
+      "failed": 0,
+      "average_duration_ms": null,
+      "min_duration_ms": null,
+      "max_duration_ms": null
+    },
+    {
+      "page": "Insights",
+      "type": "navigation",
+      "expected_navigation": true,
+      "nav_locator": "nav[aria-label=\"Primary\"] a[href=\"/insights\"]",
+      "expected_heading": "Insights",
+      "executions": 0,
+      "passed": 0,
+      "failed": 0,
+      "average_duration_ms": null,
+      "min_duration_ms": null,
+      "max_duration_ms": null
+    },
+    {
+      "page": "Admin Console",
+      "type": "navigation",
+      "expected_navigation": true,
+      "nav_locator": "nav[aria-label=\"Primary\"] a[href=\"/admin\"]",
+      "expected_heading": "System administration",
+      "executions": 0,
+      "passed": 0,
+      "failed": 0,
+      "average_duration_ms": null,
+      "min_duration_ms": null,
+      "max_duration_ms": null
+    }
+  ],
+  "execution_results": [],
+  "web_vitals": [],
+  "authentication": {
+        "storage_state_path": "../../automation/ui/storage_state.json",
+        "session_cookie_name": "cmma_session",
+        "session_cookie_present": true,
+        "cookie_count": 1,
+        "local_storage_origin_count": 1,
+        "sensitive_values_included": false
+      },
+  "infrastructure": {
+        "browser": "Chromium",
+        "test_type": "k6/browser",
+        "executor": "per-vu-iterations",
+        "vus": 25,
+        "iterations": 5
+      },
+  "test_machine": {
+        "source": "k6 runtime",
+        "sensitive_details_included": false
+      },
+  "missing_files": [],
+  "execution_notes": [
+          "My Actions is treated as the authenticated landing page and is not clicked as a sidebar item.",
+          "Projects, Workforce, Scheduling, Reports, Insights and Admin Console are navigated using the Primary sidebar.",
+          "Workforce uses the actual application navigation path /resources.",
+          "Admin Console uses the actual application navigation path /admin.",
+          "Admin Console heading validation uses \"System Administration\".",
+          "Web Vitals are collected for observation only and are non-blocking.",
+          "Authentication values are not written to the report.",
+          "Workload: 25 VU x 5 iteration(s).",
+          "Expected pages: 7.",
+          "Observed page executions: 0.",
+          "Browser HTTP responses observed: 0.",
+          "Browser HTTP responses >=400: 0."
+        ]
+}

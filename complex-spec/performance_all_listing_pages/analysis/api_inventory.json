@@ -1,0 +1,1514 @@
+[
+  {
+    "har_index": 1,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/scheduling",
+    "status": 307,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 2,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/login",
+    "status": 200,
+    "classification": "AUTH",
+    "request_body": ""
+  },
+  {
+    "har_index": 3,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/0-8wgkz6yufop.css",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 4,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/0fg2fzd~.5k.i.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 5,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/14b-jbolxeyx..js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 6,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/0hfw~zchjv985.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 7,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/031k8csq6~796.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 8,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/turbopack-0xe6_wk85l-mh.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 9,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/0mkqz6sdmbk65.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 10,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/0jvc2n6bc-391.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 11,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/12.04oas2f3vs.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 12,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/11z~edl8e6tkk.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 13,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/0i.l9589uvx0j.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 14,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/0_m7tf66bdvb5.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 15,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/0tubory734icx.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 16,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/0py2g23eeu85v.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 17,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/0kf2awta.5cr5.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 18,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/0o16275phax93.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 19,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/0n7uk.z8y9lp0.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 20,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/favicon.ico",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 21,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/auth/config",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 22,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/auth/config",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 23,
+    "method": "GET",
+    "host": "cmmadev.blob.core.windows.net",
+    "path": "/logo-uploads/logos/c5ce755a-c7c2-41eb-8ef2-e0c6ba342ac8.svg",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 24,
+    "method": "POST",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/session/login",
+    "status": 200,
+    "classification": "AUTH",
+    "request_body": "{\"email\":\"monalisa.badatya+1@costrategix.com\",\"password\":\"Test@123\",\"tenantSlug\":\"danis-cmma-dev\",\"deviceFingerprint\":\"e0169f97-1c2b-453b-87e9-6cc19466eeb1\"}"
+  },
+  {
+    "har_index": 25,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/mfa/verify",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 26,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/0z96aibispj7h.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 27,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/14i1c7s68_.bq.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 28,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/favicon.ico",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 29,
+    "method": "POST",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/auth/mfa/send-code",
+    "status": 201,
+    "classification": "MUTATION_CANDIDATE",
+    "request_body": "{\"email\":\"MONALISA.BADATYA+1@COSTRATEGIX.COM\",\"deviceFingerprint\":\"e0169f97-1c2b-453b-87e9-6cc19466eeb1\",\"tenantSlug\":\"danis-cmma-dev\"}"
+  },
+  {
+    "har_index": 30,
+    "method": "POST",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/session/mfa-verify",
+    "status": 200,
+    "classification": "AUTH",
+    "request_body": "{\"email\":\"MONALISA.BADATYA+1@COSTRATEGIX.COM\",\"deviceFingerprint\":\"e0169f97-1c2b-453b-87e9-6cc19466eeb1\",\"code\":\"477339\",\"tenantSlug\":\"danis-cmma-dev\"}"
+  },
+  {
+    "har_index": 31,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 32,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/0mvq0gw-l2zuc.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 33,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/0vco4d917t7dy.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 34,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/0ol_ychnyuscr.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 35,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/0q2cz8w9t95ti.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 36,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/04vlxnf7g3noa.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 37,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/148yup~n5heem.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 38,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/02zrx6_otchih.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 39,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/0zlhvtyki2_qa.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 40,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/123_cs~91zl_o.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 41,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/0eo2~s97uu55l.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 42,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/0d-v1ryj~gk~3.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 43,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/favicon.ico",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 44,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/dashboard/overview",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 45,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/dashboard/comments",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 46,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/users/me/preferences",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 47,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/resource-trades",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 48,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/workforce",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 49,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/system/labels",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 50,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/settings",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 51,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/admin",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 52,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/insights",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 53,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/reports",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 54,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/scheduling",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 55,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/resources",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 56,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/projects",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 57,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/settings",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 58,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/settings",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 59,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/workforce/assignment-change-requests",
+    "status": 200,
+    "classification": "BUSINESS_CANDIDATE",
+    "request_body": ""
+  },
+  {
+    "har_index": 60,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/workforce/saved-views",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 61,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/projects",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 62,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/settings",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 63,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/settings",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 64,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/settings",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 65,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/projects",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 66,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/projects",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 67,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/projects",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 68,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/0cfp-sxfvbaj5.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 69,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/admin",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 70,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/admin",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 71,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/admin",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 72,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/0ph95pn~_j599.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 73,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/02mo1u700nwz1.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 74,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/0ev-w1~o_3w95.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 75,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/03ltze2xhozdo.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 76,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/insights",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 77,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/insights",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 78,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/insights",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 79,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/1397-2ba297ju.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 80,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/01~.nfc_1od.6.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 81,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/110nv3f2whdoe.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 82,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/18bvn-qyrb8yb.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 83,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/0pkv5md_f5ujy.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 84,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/reports",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 85,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/reports",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 86,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/reports",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 87,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/0fcyqak3m7n77.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 88,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/04gnww93tkxws.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 89,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/08qm.oibr_ry6.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 90,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/scheduling",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 91,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/scheduling",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 92,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/scheduling",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 93,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/09etely-mvohs.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 94,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/04ytcn3hohc5s.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 95,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/087-jezocls7z.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 96,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/043qi3t5_syf1.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 97,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/0b9ya119aexhu.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 98,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/resources",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 99,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/resources",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 100,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/resources",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 101,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/0k3sfha-hq7v7.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 102,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/009uqilt84kw9.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 103,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/13ymd4f5u492d.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 104,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/0uupd1aqbyqe_.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 105,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/08s_.r7avyx.o.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 106,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/0zkktpuz-b1-n.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 107,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/0~.razwkmvswn.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 108,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 109,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 110,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/10kuig47v7b9a.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 111,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/08fonk0i85uo~.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 112,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/_next/static/chunks/12x_ln7zn8~m2.js",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 113,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/workforce/assignments/schedule-grid",
+    "status": 200,
+    "classification": "BUSINESS_CANDIDATE",
+    "request_body": ""
+  },
+  {
+    "har_index": 114,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/resource-trades",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 115,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/projects",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 116,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/workforce/assignments/board",
+    "status": 200,
+    "classification": "BUSINESS_CANDIDATE",
+    "request_body": ""
+  },
+  {
+    "har_index": 117,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/workforce/saved-views",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 118,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/favicon.ico",
+    "status": 200,
+    "classification": "STATIC",
+    "request_body": ""
+  },
+  {
+    "har_index": 119,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/workforce/assignments/schedule-grid",
+    "status": 200,
+    "classification": "BUSINESS_CANDIDATE",
+    "request_body": ""
+  },
+  {
+    "har_index": 120,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/resource-trades",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 121,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/projects",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 122,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/workforce/assignments/board",
+    "status": 200,
+    "classification": "BUSINESS_CANDIDATE",
+    "request_body": ""
+  },
+  {
+    "har_index": 123,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/workforce/saved-views",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 124,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/workforce/b1936c57-fa90-4413-8bb0-0a433f49ab57",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 125,
+    "method": "POST",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/settings/distance/calculate",
+    "status": 400,
+    "classification": "MUTATION_CANDIDATE",
+    "request_body": "{\"resourceId\":\"b1936c57-fa90-4413-8bb0-0a433f49ab57\",\"projectId\":\"58530491-73ba-48df-bf0d-d9bc7693a56d\"}"
+  },
+  {
+    "har_index": 126,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/workforce/assignments/45238d0e-36a9-4eb6-833c-160a28d12103/change-requests/pending",
+    "status": 200,
+    "classification": "BUSINESS_CANDIDATE",
+    "request_body": ""
+  },
+  {
+    "har_index": 127,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/workforce/comments/ASSIGNMENT/45238d0e-36a9-4eb6-833c-160a28d12103",
+    "status": 200,
+    "classification": "BUSINESS_CANDIDATE",
+    "request_body": ""
+  },
+  {
+    "har_index": 128,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/workforce/comments/ASSIGNMENT/45238d0e-36a9-4eb6-833c-160a28d12103",
+    "status": 200,
+    "classification": "BUSINESS_CANDIDATE",
+    "request_body": ""
+  },
+  {
+    "har_index": 129,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/workforce/comments/ASSIGNMENT/45238d0e-36a9-4eb6-833c-160a28d12103",
+    "status": 200,
+    "classification": "BUSINESS_CANDIDATE",
+    "request_body": ""
+  },
+  {
+    "har_index": 130,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/settings",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 131,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/admin",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 132,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/insights",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 133,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/reports",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 134,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/scheduling",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 135,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/resources",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 136,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/projects",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 137,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 138,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/settings",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 139,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/settings",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 140,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/settings",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 141,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/settings",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 142,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/settings",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 143,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/admin",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 144,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/admin",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 145,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/admin",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 146,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/insights",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 147,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/insights",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 148,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/insights",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 149,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/reports",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 150,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/reports",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 151,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/reports",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 152,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/scheduling",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 153,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/scheduling",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 154,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/scheduling",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 155,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/resources",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 156,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/resources",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 157,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/resources",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 158,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/projects",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 159,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/projects",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 160,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/projects",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 161,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 162,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 163,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/workforce/61f54e4b-d859-49b5-a56d-a18ac3145ce4",
+    "status": 200,
+    "classification": "SUPPORTING",
+    "request_body": ""
+  },
+  {
+    "har_index": 164,
+    "method": "POST",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/settings/distance/calculate",
+    "status": 400,
+    "classification": "MUTATION_CANDIDATE",
+    "request_body": "{\"resourceId\":\"61f54e4b-d859-49b5-a56d-a18ac3145ce4\",\"projectId\":\"f9f7f54d-4404-473e-9bdd-1b02f8e472af\"}"
+  },
+  {
+    "har_index": 165,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/workforce/assignments/5b4c09a2-da1e-4d05-91ee-225381fc8078/change-requests/pending",
+    "status": 200,
+    "classification": "BUSINESS_CANDIDATE",
+    "request_body": ""
+  },
+  {
+    "har_index": 166,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/workforce/comments/ASSIGNMENT/5b4c09a2-da1e-4d05-91ee-225381fc8078",
+    "status": 200,
+    "classification": "BUSINESS_CANDIDATE",
+    "request_body": ""
+  },
+  {
+    "har_index": 167,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/workforce/comments/ASSIGNMENT/5b4c09a2-da1e-4d05-91ee-225381fc8078",
+    "status": 200,
+    "classification": "BUSINESS_CANDIDATE",
+    "request_body": ""
+  },
+  {
+    "har_index": 168,
+    "method": "GET",
+    "host": "danis-cmma-dev.cosdevx.com",
+    "path": "/api/workforce/comments/ASSIGNMENT/5b4c09a2-da1e-4d05-91ee-225381fc8078",
+    "status": 200,
+    "classification": "BUSINESS_CANDIDATE",
+    "request_body": ""
+  }
+]

@@ -1,0 +1,698 @@
+{
+  "root_group": {
+    "name": "",
+    "path": "",
+    "id": "d41d8cd98f00b204e9800998ecf8427e",
+    "groups": [],
+    "checks": [
+        {
+          "name": "My Actions page loaded successfully",
+          "path": "::My Actions page loaded successfully",
+          "id": "d4b9b755ea0d0fec494a8f6aa8e39e1f",
+          "passes": 1,
+          "fails": 0
+        },
+        {
+          "name": "Projects page loaded successfully",
+          "path": "::Projects page loaded successfully",
+          "id": "aad4a3024918dfb249646a1df9944373",
+          "passes": 1,
+          "fails": 0
+        },
+        {
+          "name": "Workforce page loaded successfully",
+          "path": "::Workforce page loaded successfully",
+          "id": "46ce07987ff87183f7f1b0a6875fb01e",
+          "passes": 1,
+          "fails": 0
+        },
+        {
+          "name": "Scheduling page loaded successfully",
+          "path": "::Scheduling page loaded successfully",
+          "id": "1a25d832f9bdf2ccea3067ede1b6a9f9",
+          "passes": 1,
+          "fails": 0
+        },
+        {
+          "fails": 0,
+          "name": "Reports page loaded successfully",
+          "path": "::Reports page loaded successfully",
+          "id": "13b50fe316533c0940eaa8bc9f7dab29",
+          "passes": 1
+        },
+        {
+          "passes": 1,
+          "fails": 0,
+          "name": "Insights page loaded successfully",
+          "path": "::Insights page loaded successfully",
+          "id": "cb2cf88aa8dba6178167fea2422833f5"
+        },
+        {
+          "passes": 0,
+          "fails": 1,
+          "name": "Admin Console page loaded successfully",
+          "path": "::Admin Console page loaded successfully",
+          "id": "7d28d0d78a484ebbeb8ddcaa6b8bd4f3"
+        }
+      ]
+  },
+  "options": {
+    "summaryTrendStats": [
+      "avg",
+      "min",
+      "med",
+      "max",
+      "p(90)",
+      "p(95)",
+      "p(99)",
+      "count"
+    ],
+    "summaryTimeUnit": "",
+    "noColor": false
+  },
+  "state": {
+    "isStdOutTTY": true,
+    "isStdErrTTY": true,
+    "testRunDurationMs": 62805.8848
+  },
+  "metrics": {
+    "data_received": {
+      "values": {
+        "count": 0,
+        "rate": 0
+      },
+      "type": "counter",
+      "contains": "data"
+    },
+    "web_vital_fcp_my_actions": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "max": 2000,
+        "p(90)": 2000,
+        "p(95)": 2000,
+        "p(99)": 2000,
+        "count": 1,
+        "avg": 2000,
+        "min": 2000,
+        "med": 2000
+      }
+    },
+    "vus": {
+      "type": "gauge",
+      "contains": "default",
+      "values": {
+        "min": 1,
+        "max": 1,
+        "value": 1
+      }
+    },
+    "web_vital_ttfb_projects": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "med": 1107.6999999284744,
+        "max": 1107.6999999284744,
+        "p(90)": 1107.6999999284744,
+        "p(95)": 1107.6999999284744,
+        "p(99)": 1107.6999999284744,
+        "count": 1,
+        "avg": 1107.6999999284744,
+        "min": 1107.6999999284744
+      }
+    },
+    "ui_navigation_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 5071,
+        "min": 308,
+        "med": 3598.5,
+        "max": 14873,
+        "p(90)": 11256.5,
+        "p(95)": 13064.75,
+        "p(99)": 14511.350000000002,
+        "count": 6
+      },
+      "thresholds": {
+        "p(95) < 2000": {
+          "ok": false
+        },
+        "p(99) < 3500": {
+          "ok": false
+        }
+      }
+    },
+    "web_vital_ttfb_insights": {
+      "contains": "time",
+      "values": {
+        "max": 1107.6999999284744,
+        "p(90)": 1107.6999999284744,
+        "p(95)": 1107.6999999284744,
+        "p(99)": 1107.6999999284744,
+        "count": 1,
+        "avg": 1107.6999999284744,
+        "min": 1107.6999999284744,
+        "med": 1107.6999999284744
+      },
+      "type": "trend"
+    },
+    "iterations": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 1,
+        "rate": 0.015922074869009727
+      }
+    },
+    "browser_data_received": {
+      "type": "counter",
+      "contains": "data",
+      "values": {
+        "count": 11248477,
+        "rate": 179099.09295633392
+      }
+    },
+    "web_vital_ttfb_scheduling": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "med": 1107.6999999284744,
+        "max": 1107.6999999284744,
+        "p(90)": 1107.6999999284744,
+        "p(95)": 1107.6999999284744,
+        "p(99)": 1107.6999999284744,
+        "count": 1,
+        "avg": 1107.6999999284744,
+        "min": 1107.6999999284744
+      }
+    },
+    "browser_web_vital_inp": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "max": 104,
+        "p(90)": 104,
+        "p(95)": 104,
+        "p(99)": 104,
+        "count": 1,
+        "avg": 104,
+        "min": 104,
+        "med": 104
+      },
+      "thresholds": {
+        "p(95) < 200": {
+          "ok": true
+        }
+      }
+    },
+    "ui_page_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(90)": 21021.400000000005,
+        "p(95)": 25632.69999999999,
+        "p(99)": 29321.73999999999,
+        "count": 7,
+        "avg": 8667.142857142857,
+        "min": 308,
+        "med": 5782,
+        "max": 30244
+      }
+    },
+    "web_vital_cls_scheduling": {
+      "type": "trend",
+      "contains": "default",
+      "values": {
+        "count": 1,
+        "avg": 0,
+        "min": 0,
+        "med": 0,
+        "max": 0,
+        "p(90)": 0,
+        "p(95)": 0,
+        "p(99)": 0
+      }
+    },
+    "web_vital_cls_insights": {
+      "type": "trend",
+      "contains": "default",
+      "values": {
+        "p(95)": 0,
+        "p(99)": 0,
+        "count": 1,
+        "avg": 0,
+        "min": 0,
+        "med": 0,
+        "max": 0,
+        "p(90)": 0
+      }
+    },
+    "web_vital_fcp_reports": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 2000,
+        "min": 2000,
+        "med": 2000,
+        "max": 2000,
+        "p(90)": 2000,
+        "p(95)": 2000,
+        "p(99)": 2000,
+        "count": 1
+      }
+    },
+    "browser_http_req_failed": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 0,
+        "passes": 0,
+        "fails": 167
+      },
+      "thresholds": {
+        "rate < 0.01": {
+          "ok": true
+        }
+      }
+    },
+    "web_vital_fcp_scheduling": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 2000,
+        "min": 2000,
+        "med": 2000,
+        "max": 2000,
+        "p(90)": 2000,
+        "p(95)": 2000,
+        "p(99)": 2000,
+        "count": 1
+      }
+    },
+    "browser_data_sent": {
+      "values": {
+        "count": 422613,
+        "rate": 6728.875826616808
+      },
+      "type": "counter",
+      "contains": "data"
+    },
+    "web_vital_fcp_projects": {
+      "values": {
+        "p(95)": 2000,
+        "p(99)": 2000,
+        "count": 1,
+        "avg": 2000,
+        "min": 2000,
+        "med": 2000,
+        "max": 2000,
+        "p(90)": 2000
+      },
+      "type": "trend",
+      "contains": "time"
+    },
+    "web_vital_fcp_workforce": {
+      "values": {
+        "p(95)": 2000,
+        "p(99)": 2000,
+        "count": 1,
+        "avg": 2000,
+        "min": 2000,
+        "med": 2000,
+        "max": 2000,
+        "p(90)": 2000
+      },
+      "type": "trend",
+      "contains": "time"
+    },
+    "web_vital_cls_projects": {
+      "type": "trend",
+      "contains": "default",
+      "values": {
+        "avg": 0,
+        "min": 0,
+        "med": 0,
+        "max": 0,
+        "p(90)": 0,
+        "p(95)": 0,
+        "p(99)": 0,
+        "count": 1
+      }
+    },
+    "browser_http_req_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "max": 15660.578,
+        "p(90)": 5789.122000000003,
+        "p(95)": 10311.8441993,
+        "p(99)": 14850.54312034,
+        "count": 167,
+        "avg": 2755.876556952096,
+        "min": 253.212001,
+        "med": 1329.907
+      }
+    },
+    "iteration_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "count": 1,
+        "avg": 61823.5211,
+        "min": 61823.5211,
+        "med": 61823.5211,
+        "max": 61823.5211,
+        "p(90)": 61823.5211,
+        "p(95)": 61823.5211,
+        "p(99)": 61823.5211
+      }
+    },
+    "web_vital_cls_workforce": {
+      "values": {
+        "p(99)": 0,
+        "count": 1,
+        "avg": 0,
+        "min": 0,
+        "med": 0,
+        "max": 0,
+        "p(90)": 0,
+        "p(95)": 0
+      },
+      "type": "trend",
+      "contains": "default"
+    },
+    "browser_web_vital_cls": {
+      "type": "trend",
+      "contains": "default",
+      "values": {
+        "min": 0.001692455463939243,
+        "med": 0.001692455463939243,
+        "max": 0.001692455463939243,
+        "p(90)": 0.001692455463939243,
+        "p(95)": 0.001692455463939243,
+        "p(99)": 0.001692455463939243,
+        "count": 1,
+        "avg": 0.001692455463939243
+      },
+      "thresholds": {
+        "p(95) < 0.1": {
+          "ok": true
+        }
+      }
+    },
+    "checks": {
+      "values": {
+        "fails": 1,
+        "rate": 0.8571428571428571,
+        "passes": 6
+      },
+      "thresholds": {
+        "rate >= 1": {
+          "ok": false
+        }
+      },
+      "type": "rate",
+      "contains": "default"
+    },
+    "browser_web_vital_ttfb": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "max": 1107.6999999284744,
+        "p(90)": 1107.6999999284744,
+        "p(95)": 1107.6999999284744,
+        "p(99)": 1107.6999999284744,
+        "count": 1,
+        "avg": 1107.6999999284744,
+        "min": 1107.6999999284744,
+        "med": 1107.6999999284744
+      },
+      "thresholds": {
+        "p(95) < 800": {
+          "ok": false
+        }
+      }
+    },
+    "ui_page_success_rate": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 0.8571428571428571,
+        "passes": 6,
+        "fails": 1
+      },
+      "thresholds": {
+        "rate >= 0.99": {
+          "ok": false
+        }
+      }
+    },
+    "web_vital_ttfb_workforce": {
+      "contains": "time",
+      "values": {
+        "max": 1107.6999999284744,
+        "p(90)": 1107.6999999284744,
+        "p(95)": 1107.6999999284744,
+        "p(99)": 1107.6999999284744,
+        "count": 1,
+        "avg": 1107.6999999284744,
+        "min": 1107.6999999284744,
+        "med": 1107.6999999284744
+      },
+      "type": "trend"
+    },
+    "vus_max": {
+      "contains": "default",
+      "values": {
+        "value": 1,
+        "min": 1,
+        "max": 1
+      },
+      "type": "gauge"
+    },
+    "web_vital_ttfb_reports": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(95)": 1107.6999999284744,
+        "p(99)": 1107.6999999284744,
+        "count": 1,
+        "avg": 1107.6999999284744,
+        "min": 1107.6999999284744,
+        "med": 1107.6999999284744,
+        "max": 1107.6999999284744,
+        "p(90)": 1107.6999999284744
+      }
+    },
+    "web_vital_cls_reports": {
+      "type": "trend",
+      "contains": "default",
+      "values": {
+        "p(90)": 0,
+        "p(95)": 0,
+        "p(99)": 0,
+        "count": 1,
+        "avg": 0,
+        "min": 0,
+        "med": 0,
+        "max": 0
+      }
+    },
+    "web_vital_cls_my_actions": {
+      "type": "trend",
+      "contains": "default",
+      "values": {
+        "med": 0,
+        "max": 0,
+        "p(90)": 0,
+        "p(95)": 0,
+        "p(99)": 0,
+        "count": 1,
+        "avg": 0,
+        "min": 0
+      }
+    },
+    "browser_web_vital_lcp": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(99)": 7832,
+        "count": 1,
+        "avg": 7832,
+        "min": 7832,
+        "med": 7832,
+        "max": 7832,
+        "p(90)": 7832,
+        "p(95)": 7832
+      },
+      "thresholds": {
+        "p(95) < 2500": {
+          "ok": false
+        }
+      }
+    },
+    "browser_web_vital_fcp": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "count": 1,
+        "avg": 2000,
+        "min": 2000,
+        "med": 2000,
+        "max": 2000,
+        "p(90)": 2000,
+        "p(95)": 2000,
+        "p(99)": 2000
+      },
+      "thresholds": {
+        "p(95) < 1800": {
+          "ok": false
+        }
+      }
+    },
+    "web_vital_ttfb_my_actions": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(95)": 1107.6999999284744,
+        "p(99)": 1107.6999999284744,
+        "count": 1,
+        "avg": 1107.6999999284744,
+        "min": 1107.6999999284744,
+        "med": 1107.6999999284744,
+        "max": 1107.6999999284744,
+        "p(90)": 1107.6999999284744
+      }
+    },
+    "web_vital_fcp_insights": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(99)": 2000,
+        "count": 1,
+        "avg": 2000,
+        "min": 2000,
+        "med": 2000,
+        "max": 2000,
+        "p(90)": 2000,
+        "p(95)": 2000
+      }
+    },
+    "data_sent": {
+      "type": "counter",
+      "contains": "data",
+      "values": {
+        "count": 0,
+        "rate": 0
+      }
+    }
+  },
+  "test_type": "UI_BROWSER_PERFORMANCE",
+  "feature": "Navigation Pages",
+  "epic": "Navigation Performance",
+  "base_url": "https://danis-cmma-dev.cosdevx.com/",
+  "environment": "QA",
+  "version_build": "Not provided",
+  "test_date": "2026-09-28T14:54:42.247Z",
+  "stage": {
+    "vus": 1,
+    "iterations_per_vu": 1,
+    "workload": "1 VU / 1 iteration"
+  },
+  "workload": {
+    "label": "1 VU / 1 iteration",
+    "vus": 1,
+    "iterations_per_vu": 1,
+    "total_expected_iterations": 1
+  },
+  "authentication": {
+    "session_cookie": "cmma_session",
+    "session_present": true
+  },
+  "performance_targets": {
+    "functional": {
+      "ui_checks_pass_rate": "100%",
+      "ui_page_success_rate": ">= 99%"
+    },
+    "ui_navigation": {
+      "p95": "< 2000 ms",
+      "p99": "< 3500 ms"
+    },
+    "ui_page": {
+      "p95": "< 2000 ms",
+      "p99": "< 3500 ms"
+    },
+    "browser_http": {
+      "failed_rate": "< 1%"
+    },
+    "api": {
+      "p95": "< 2000 ms",
+      "http_failed_rate": "< 1%",
+      "page_success_rate": ">= 99%"
+    },
+    "web_vitals": {
+      "LCP": "< 2500 ms",
+      "FCP": "< 1800 ms",
+      "TTFB": "< 800 ms",
+      "INP": "< 200 ms",
+      "CLS": "< 0.1"
+    }
+  },
+  "threshold_configuration": {
+    "ui_checks_pass_rate": 1,
+    "ui_page_success_rate": 0.99,
+    "ui_navigation_p95_ms": 2000,
+    "ui_navigation_p99_ms": 3500,
+    "ui_page_p95_ms": 2000,
+    "ui_page_p99_ms": 3500,
+    "browser_http_failed_rate": 0.01,
+    "api_p95_ms": 2000,
+    "api_http_failed_rate": 0.01,
+    "api_page_success_rate": 0.99,
+    "lcp_p95_ms": 2500,
+    "fcp_p95_ms": 1800,
+    "ttfb_p95_ms": 800,
+    "inp_p95_ms": 200,
+    "cls_p95": 0.1
+  },
+  "infrastructure": {
+    "application_server": "Not provided",
+    "server_cpu": "Not provided",
+    "server_memory": "Not provided",
+    "database": "Not provided",
+    "db_version": "Not provided",
+    "network": "Not provided",
+    "region": "Not provided"
+  },
+  "test_machine": {
+    "os": "Detected from browser",
+    "cpu": "Not provided",
+    "memory": "Not provided",
+    "browser": "Chromium",
+    "browser_version": "k6 Chromium",
+    "network": "Not provided"
+  },
+  "tools": {
+    "performance_tool": "k6",
+    "browser_tool": "k6 Browser",
+    "browser_engine": "Chromium",
+    "api_tool": "k6"
+  },
+  "screenshots_enabled": false,
+  "navigation_flow": [
+    "My Actions",
+    "Projects",
+    "Workforce",
+    "Scheduling",
+    "Reports",
+    "Insights",
+    "Admin Console"
+  ],
+  "artifact_source": {
+    "storage_state": "../../automation/ui/storage_state.json",
+    "har": "performance/har/navigation_pages.har",
+    "api_inventory": "performance/analysis/navigation_api_inventory.json",
+    "api_k6": "performance/k6/navigation_pages.js"
+  }
+}

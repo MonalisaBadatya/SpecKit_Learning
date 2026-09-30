@@ -1,0 +1,1502 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>
+    Navigation Pages - k6 Performance Report
+</title>
+
+<style>
+
+body {
+    margin: 0;
+    padding: 24px 32px;
+    background: #0f1117;
+    color: #e2e8f0;
+    font-family:
+        Segoe UI,
+        Arial,
+        sans-serif;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+h2 {
+    margin-top: 28px;
+    color: #93c5fd;
+    font-size: 17px;
+}
+
+h3 {
+    margin-top: 18px;
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+.sub {
+    color: #94a3b8;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.callout {
+    background: #1a1d27;
+    border-left: 4px solid #6366f1;
+    padding: 14px 18px;
+    line-height: 1.6;
+    margin-bottom: 22px;
+}
+
+.table-wrap {
+    overflow-x: auto;
+    margin-bottom: 24px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1a1d27;
+    min-width: 1000px;
+}
+
+th,
+td {
+    padding: 9px 12px;
+    border-bottom:
+        1px solid #2a2d3a;
+    text-align: left;
+    vertical-align: top;
+    font-size: 12px;
+}
+
+th {
+    background: #212435;
+    color: #cbd5e1;
+    white-space: nowrap;
+}
+
+.metric-name {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.method {
+    font-weight: 700;
+    font-size: 11px;
+    color: #93c5fd;
+}
+
+.slow {
+    color: #f59e0b;
+    font-weight: 600;
+}
+
+.badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.badge.pass {
+    background: #14532d;
+    color: #86efac;
+}
+
+.badge.check {
+    background: #78350f;
+    color: #fcd34d;
+}
+
+.badge.fail {
+    background: #7f1d1d;
+    color: #fca5a5;
+}
+
+.badge.na {
+    background: #334155;
+    color: #cbd5e1;
+}
+
+.badge.obs {
+    background: #1e3a5f;
+    color: #93c5fd;
+    border:
+        1px solid #3b82f6;
+}
+
+small {
+    color: #94a3b8;
+}
+
+ul {
+    margin-top: 8px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+.section-divider {
+    margin-top: 35px;
+    border: 0;
+    border-top:
+        1px solid #2a2d3a;
+}
+
+footer {
+    margin-top: 35px;
+    color: #64748b;
+    font-size: 11px;
+}
+
+code {
+    background: #111827;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<h1>
+    Navigation Pages –
+    k6 Performance Report
+</h1>
+
+
+<div class="sub">
+
+    Flow:
+
+    My Actions
+    &rarr;
+    Projects
+    &rarr;
+    Workforce
+    &rarr;
+    Scheduling
+    &rarr;
+    Reports
+    &rarr;
+    Insights
+    &rarr;
+    Admin Console
+
+    <br>
+
+    Latest source test run:
+
+    <strong>
+        2026-09-16T13:16:34.234Z
+    </strong>
+
+</div>
+
+
+<div class="callout">
+
+    <strong>Performance target:</strong>
+
+    API p95 &lt; 2000 ms.
+
+    <br>
+
+    <strong>Important:</strong>
+
+    Endpoint-level results identify
+    the individual API and endpoint
+    associated with each metric.
+
+    <br>
+
+    The endpoint matrix compares
+    the same API/endpoint across
+    different VU and iteration combinations.
+
+    <br>
+
+    <strong>Report generation does not execute k6.</strong>
+
+    It reads the existing JSON result files.
+
+</div>
+
+
+
+<h2>📄 Document Information</h2>
+
+<div class="table-wrap">
+
+<table>
+
+    <thead>
+
+        <tr>
+            <th>Field</th>
+            <th>Details</th>
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        <tr>
+            <td>Feature</td>
+            <td>Navigation Pages</td>
+        </tr>
+
+        <tr>
+            <td>Epic</td>
+            <td>Navigation Performance</td>
+        </tr>
+
+        <tr>
+            <td>Version / Build</td>
+            <td>N/A</td>
+        </tr>
+
+        <tr>
+            <td>Environment</td>
+            <td>QA</td>
+        </tr>
+
+        <tr>
+            <td>Test Date</td>
+            <td>2026-09-16T13:16:34.234Z</td>
+        </tr>
+
+        <tr>
+            <td>Tool</td>
+            <td>
+                k6 N/A
+            </td>
+        </tr>
+
+        <tr>
+            <td>UI Tool</td>
+            <td>k6 Browser</td>
+        </tr>
+
+        <tr>
+            <td>API Tool</td>
+            <td>k6</td>
+        </tr>
+
+    </tbody>
+
+</table>
+
+</div>
+
+
+
+
+<h2>📋 Execution Summary</h2>
+
+<div class="table-wrap">
+
+<table>
+
+    <thead>
+
+        <tr>
+            <th>Item</th>
+            <th>Details</th>
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        <tr>
+
+            <td>
+                API workload stages executed
+            </td>
+
+            <td>
+                1 VU / 1 iter, 1 VU / 5 iters, 5 VUs / 5 iters, 25 VUs / 5 iters
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+                UI workload stages executed
+            </td>
+
+            <td>
+                UI 1 VU / 1 iter, UI 1 VU / 5 iters, UI 5 VUs / 5 iters
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+                API result files
+            </td>
+
+            <td>
+                4
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+                UI result files
+            </td>
+
+            <td>
+                3
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+                API endpoint definitions
+            </td>
+
+            <td>
+                38
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+                Endpoint metrics reported
+            </td>
+
+            <td>
+                Requests, p50, p90, p95, p99,
+                Max, Error %, RPS, Status
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+                Performance target
+            </td>
+
+            <td>
+                API p95 &lt; 2000 ms
+            </td>
+
+        </tr>
+
+    </tbody>
+
+</table>
+
+</div>
+
+
+
+
+<h2>🖥️ Infrastructure</h2>
+
+<div class="table-wrap">
+
+<table>
+
+    <thead>
+
+        <tr>
+            <th>Item</th>
+            <th>Details</th>
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        
+        <tr>
+            <td>Application server</td>
+            <td>N/A</td>
+        </tr>
+        
+        <tr>
+            <td>CPU</td>
+            <td>N/A</td>
+        </tr>
+        
+        <tr>
+            <td>Memory</td>
+            <td>N/A</td>
+        </tr>
+        
+        <tr>
+            <td>Database</td>
+            <td>N/A</td>
+        </tr>
+        
+        <tr>
+            <td>DB version</td>
+            <td>N/A</td>
+        </tr>
+        
+        <tr>
+            <td>Network</td>
+            <td>N/A</td>
+        </tr>
+        
+        <tr>
+            <td>Region</td>
+            <td>N/A</td>
+        </tr>
+        
+
+    </tbody>
+
+</table>
+
+</div>
+
+
+
+
+<h2>💻 Test Machine</h2>
+
+<div class="table-wrap">
+
+<table>
+
+    <thead>
+
+        <tr>
+            <th>Item</th>
+            <th>Details</th>
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        
+        <tr>
+            <td>OS</td>
+            <td>N/A</td>
+        </tr>
+        
+        <tr>
+            <td>CPU</td>
+            <td>N/A</td>
+        </tr>
+        
+        <tr>
+            <td>Memory</td>
+            <td>N/A</td>
+        </tr>
+        
+        <tr>
+            <td>Browser</td>
+            <td>N/A</td>
+        </tr>
+        
+        <tr>
+            <td>Browser version</td>
+            <td>N/A</td>
+        </tr>
+        
+        <tr>
+            <td>Network</td>
+            <td>N/A</td>
+        </tr>
+        
+
+    </tbody>
+
+</table>
+
+</div>
+
+
+
+<h2>
+    API Performance
+</h2>
+
+
+<div class="table-wrap">
+
+<table>
+
+<thead>
+
+<tr>
+
+    <th>Metric</th>
+
+    
+        <th>
+            1 VU / 1 iter
+            <br>
+            <small>
+                2026-09-16T13:03:51.418Z
+            </small>
+        </th>
+        
+        <th>
+            1 VU / 5 iters
+            <br>
+            <small>
+                2026-09-16T13:06:24.143Z
+            </small>
+        </th>
+        
+        <th>
+            5 VUs / 5 iters
+            <br>
+            <small>
+                2026-09-16T13:10:18.430Z
+            </small>
+        </th>
+        
+        <th>
+            25 VUs / 5 iters
+            <br>
+            <small>
+                2026-09-16T13:16:34.234Z
+            </small>
+        </th>
+        
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+
+<tr><td class="metric-name">Total HTTP Requests</td><td class="">39</td><td class="">195</td><td class="">975</td><td class="">4875</td></tr>
+
+
+<tr><td class="metric-name">HTTP Failed %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="">43.98%</td></tr>
+
+
+<tr><td class="metric-name">Page Success Rate %</td><td class="">100.00%</td><td class="">100.00%</td><td class="">100.00%</td><td class="">52.11%</td></tr>
+
+
+<tr><td class="metric-name">Average Response</td><td class="">632.3 ms</td><td class="">539.7 ms</td><td class="">857.6 ms</td><td class="">1583.8 ms</td></tr>
+
+
+<tr><td class="metric-name">p90 Response</td><td class="">1755.9 ms</td><td class="">1390.4 ms</td><td class="slow">2574.3 ms</td><td class="slow">5079.9 ms</td></tr>
+
+
+<tr><td class="metric-name">p95 Response</td><td class="slow">2322.6 ms</td><td class="slow">2223.1 ms</td><td class="slow">3271.2 ms</td><td class="slow">8080.5 ms</td></tr>
+
+
+<tr><td class="metric-name">p99 Response</td><td class="slow">3197.9 ms</td><td class="slow">3092.0 ms</td><td class="slow">6226.3 ms</td><td class="slow">16921.3 ms</td></tr>
+
+
+<tr><td class="metric-name">Max Response</td><td class="slow">3217.8 ms</td><td class="slow">3175.2 ms</td><td class="slow">12406.9 ms</td><td class="slow">31679.0 ms</td></tr>
+
+
+<tr><td class="metric-name">Overall RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr>
+
+
+</tbody>
+
+</table>
+
+</div>
+
+
+<h2>
+    API Threshold Status
+</h2>
+
+
+<div class="table-wrap">
+
+<table>
+
+<thead>
+
+<tr>
+
+    <th>Threshold</th>
+
+    
+        <th>
+            1 VU / 1 iter
+            <br>
+            <small>
+                2026-09-16T13:03:51.418Z
+            </small>
+        </th>
+        
+        <th>
+            1 VU / 5 iters
+            <br>
+            <small>
+                2026-09-16T13:06:24.143Z
+            </small>
+        </th>
+        
+        <th>
+            5 VUs / 5 iters
+            <br>
+            <small>
+                2026-09-16T13:10:18.430Z
+            </small>
+        </th>
+        
+        <th>
+            25 VUs / 5 iters
+            <br>
+            <small>
+                2026-09-16T13:16:34.234Z
+            </small>
+        </th>
+        
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+
+<tr><td class="metric-name">http_req_failed</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge fail">FAILED</span></td></tr>
+
+
+<tr><td class="metric-name">page_success_rate</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge fail">FAILED</span></td></tr>
+
+
+<tr><td class="metric-name">p(95) &amp;lt; 2000 ms</td><td><span class="badge fail">FAILED</span></td><td><span class="badge fail">FAILED</span></td><td><span class="badge fail">FAILED</span></td><td><span class="badge fail">FAILED</span></td></tr>
+
+
+</tbody>
+
+</table>
+
+</div>
+
+
+<h2>
+    API Endpoint-Level Metric Comparison
+</h2>
+
+
+<div class="callout">
+
+    <strong>
+        This is the primary API performance-analysis section.
+    </strong>
+
+    <br>
+
+    Each API and endpoint is explicitly associated
+    with each metric.
+
+    <br><br>
+
+    Metrics reported:
+
+    <strong>
+        Requests,
+        p50,
+        p90,
+        p95,
+        p99,
+        Max,
+        Error %,
+        RPS,
+        Status
+    </strong>
+
+    <br><br>
+
+    This allows you to answer:
+
+    <br>
+
+    <strong>
+        Which API?
+        Which endpoint?
+        Which metric?
+        How much time?
+        Under which VU / iteration workload?
+    </strong>
+
+    <br><br>
+
+    p95 is therefore shown as a
+    <strong>metric row</strong>,
+    not as the only performance measurement.
+
+</div>
+
+
+<div class="table-wrap">
+
+<table>
+
+<thead>
+
+<tr>
+
+    <th>Page</th>
+
+    <th>
+        API Name / Endpoint
+    </th>
+
+    <th>Metric</th>
+
+    <th>1 VU / 1 iter</th><th>1 VU / 5 iters</th><th>5 VUs / 5 iters</th><th>25 VUs / 5 iters</th>
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+<tr><td>My Actions</td><td><strong>Dashboard Overview</strong><br><span class="method">GET</span><br><small>/api/dashboard/overview</small></td><td class="metric-name">Requests</td><td class="">2</td><td class="">10</td><td class="">50</td><td class="">250</td></tr><tr><td>My Actions</td><td><strong>Dashboard Overview</strong><br><span class="method">GET</span><br><small>/api/dashboard/overview</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>My Actions</td><td><strong>Dashboard Overview</strong><br><span class="method">GET</span><br><small>/api/dashboard/overview</small></td><td class="metric-name">p90</td><td class="">809.5 ms</td><td class="">675.5 ms</td><td class="">3263.6 ms</td><td class="">3083.2 ms</td></tr><tr><td>My Actions</td><td><strong>Dashboard Overview</strong><br><span class="method">GET</span><br><small>/api/dashboard/overview</small></td><td class="metric-name">p95</td><td class="">839.9 ms</td><td class="">678.3 ms</td><td class="slow">4965.9 ms</td><td class="slow">6140.9 ms</td></tr><tr><td>My Actions</td><td><strong>Dashboard Overview</strong><br><span class="method">GET</span><br><small>/api/dashboard/overview</small></td><td class="metric-name">p99</td><td class="">864.2 ms</td><td class="">680.5 ms</td><td class="slow">7635.7 ms</td><td class="slow">14723.0 ms</td></tr><tr><td>My Actions</td><td><strong>Dashboard Overview</strong><br><span class="method">GET</span><br><small>/api/dashboard/overview</small></td><td class="metric-name">Max</td><td class="">870.3 ms</td><td class="">681.1 ms</td><td class="">8783.2 ms</td><td class="">17932.9 ms</td></tr><tr><td>My Actions</td><td><strong>Dashboard Overview</strong><br><span class="method">GET</span><br><small>/api/dashboard/overview</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">49.60%</td></tr><tr><td>My Actions</td><td><strong>Dashboard Overview</strong><br><span class="method">GET</span><br><small>/api/dashboard/overview</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>My Actions</td><td><strong>Dashboard Overview</strong><br><span class="method">GET</span><br><small>/api/dashboard/overview</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge check">CHECK</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>My Actions</td><td><strong>Dashboard Comments</strong><br><span class="method">GET</span><br><small>/api/dashboard/comments</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>My Actions</td><td><strong>Dashboard Comments</strong><br><span class="method">GET</span><br><small>/api/dashboard/comments</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>My Actions</td><td><strong>Dashboard Comments</strong><br><span class="method">GET</span><br><small>/api/dashboard/comments</small></td><td class="metric-name">p90</td><td class="">267.9 ms</td><td class="">256.2 ms</td><td class="">276.0 ms</td><td class="">3350.2 ms</td></tr><tr><td>My Actions</td><td><strong>Dashboard Comments</strong><br><span class="method">GET</span><br><small>/api/dashboard/comments</small></td><td class="metric-name">p95</td><td class="">267.9 ms</td><td class="">256.3 ms</td><td class="">420.9 ms</td><td class="slow">8939.8 ms</td></tr><tr><td>My Actions</td><td><strong>Dashboard Comments</strong><br><span class="method">GET</span><br><small>/api/dashboard/comments</small></td><td class="metric-name">p99</td><td class="">267.9 ms</td><td class="">256.4 ms</td><td class="slow">2417.8 ms</td><td class="slow">8955.7 ms</td></tr><tr><td>My Actions</td><td><strong>Dashboard Comments</strong><br><span class="method">GET</span><br><small>/api/dashboard/comments</small></td><td class="metric-name">Max</td><td class="">267.9 ms</td><td class="">256.4 ms</td><td class="">3037.1 ms</td><td class="">9342.5 ms</td></tr><tr><td>My Actions</td><td><strong>Dashboard Comments</strong><br><span class="method">GET</span><br><small>/api/dashboard/comments</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">49.60%</td></tr><tr><td>My Actions</td><td><strong>Dashboard Comments</strong><br><span class="method">GET</span><br><small>/api/dashboard/comments</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>My Actions</td><td><strong>Dashboard Comments</strong><br><span class="method">GET</span><br><small>/api/dashboard/comments</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>My Actions</td><td><strong>User Preferences</strong><br><span class="method">GET</span><br><small>/api/users/me/preferences</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>My Actions</td><td><strong>User Preferences</strong><br><span class="method">GET</span><br><small>/api/users/me/preferences</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>My Actions</td><td><strong>User Preferences</strong><br><span class="method">GET</span><br><small>/api/users/me/preferences</small></td><td class="metric-name">p90</td><td class="">260.6 ms</td><td class="">250.8 ms</td><td class="">266.4 ms</td><td class="">392.1 ms</td></tr><tr><td>My Actions</td><td><strong>User Preferences</strong><br><span class="method">GET</span><br><small>/api/users/me/preferences</small></td><td class="metric-name">p95</td><td class="">260.6 ms</td><td class="">251.1 ms</td><td class="">266.9 ms</td><td class="slow">2764.2 ms</td></tr><tr><td>My Actions</td><td><strong>User Preferences</strong><br><span class="method">GET</span><br><small>/api/users/me/preferences</small></td><td class="metric-name">p99</td><td class="">260.6 ms</td><td class="">251.2 ms</td><td class="">472.9 ms</td><td class="slow">12541.6 ms</td></tr><tr><td>My Actions</td><td><strong>User Preferences</strong><br><span class="method">GET</span><br><small>/api/users/me/preferences</small></td><td class="metric-name">Max</td><td class="">260.6 ms</td><td class="">251.3 ms</td><td class="">537.9 ms</td><td class="">17303.7 ms</td></tr><tr><td>My Actions</td><td><strong>User Preferences</strong><br><span class="method">GET</span><br><small>/api/users/me/preferences</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">46.40%</td></tr><tr><td>My Actions</td><td><strong>User Preferences</strong><br><span class="method">GET</span><br><small>/api/users/me/preferences</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>My Actions</td><td><strong>User Preferences</strong><br><span class="method">GET</span><br><small>/api/users/me/preferences</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>My Actions</td><td><strong>Requestable Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=false</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>My Actions</td><td><strong>Requestable Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=false</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>My Actions</td><td><strong>Requestable Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=false</small></td><td class="metric-name">p90</td><td class="">500.6 ms</td><td class="">491.3 ms</td><td class="">1033.5 ms</td><td class="">808.5 ms</td></tr><tr><td>My Actions</td><td><strong>Requestable Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=false</small></td><td class="metric-name">p95</td><td class="">500.6 ms</td><td class="">494.0 ms</td><td class="slow">2940.5 ms</td><td class="">963.0 ms</td></tr><tr><td>My Actions</td><td><strong>Requestable Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=false</small></td><td class="metric-name">p99</td><td class="">500.6 ms</td><td class="">496.1 ms</td><td class="slow">3507.9 ms</td><td class="slow">6315.0 ms</td></tr><tr><td>My Actions</td><td><strong>Requestable Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=false</small></td><td class="metric-name">Max</td><td class="">500.6 ms</td><td class="">496.6 ms</td><td class="">3551.7 ms</td><td class="">6330.2 ms</td></tr><tr><td>My Actions</td><td><strong>Requestable Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=false</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">45.60%</td></tr><tr><td>My Actions</td><td><strong>Requestable Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=false</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>My Actions</td><td><strong>Requestable Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=false</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge check">CHECK</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>My Actions</td><td><strong>Workforce Presence Check</strong><br><span class="method">GET</span><br><small>/api/workforce?limit=1</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>My Actions</td><td><strong>Workforce Presence Check</strong><br><span class="method">GET</span><br><small>/api/workforce?limit=1</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>My Actions</td><td><strong>Workforce Presence Check</strong><br><span class="method">GET</span><br><small>/api/workforce?limit=1</small></td><td class="metric-name">p90</td><td class="">342.0 ms</td><td class="">330.1 ms</td><td class="">513.8 ms</td><td class="">5744.4 ms</td></tr><tr><td>My Actions</td><td><strong>Workforce Presence Check</strong><br><span class="method">GET</span><br><small>/api/workforce?limit=1</small></td><td class="metric-name">p95</td><td class="">342.0 ms</td><td class="">331.0 ms</td><td class="slow">2445.3 ms</td><td class="slow">10981.5 ms</td></tr><tr><td>My Actions</td><td><strong>Workforce Presence Check</strong><br><span class="method">GET</span><br><small>/api/workforce?limit=1</small></td><td class="metric-name">p99</td><td class="">342.0 ms</td><td class="">331.6 ms</td><td class="slow">3038.8 ms</td><td class="slow">16328.9 ms</td></tr><tr><td>My Actions</td><td><strong>Workforce Presence Check</strong><br><span class="method">GET</span><br><small>/api/workforce?limit=1</small></td><td class="metric-name">Max</td><td class="">342.0 ms</td><td class="">331.8 ms</td><td class="">3079.0 ms</td><td class="">17848.4 ms</td></tr><tr><td>My Actions</td><td><strong>Workforce Presence Check</strong><br><span class="method">GET</span><br><small>/api/workforce?limit=1</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">42.40%</td></tr><tr><td>My Actions</td><td><strong>Workforce Presence Check</strong><br><span class="method">GET</span><br><small>/api/workforce?limit=1</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>My Actions</td><td><strong>Workforce Presence Check</strong><br><span class="method">GET</span><br><small>/api/workforce?limit=1</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge check">CHECK</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>My Actions</td><td><strong>System Labels</strong><br><span class="method">GET</span><br><small>/api/system/labels</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>My Actions</td><td><strong>System Labels</strong><br><span class="method">GET</span><br><small>/api/system/labels</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>My Actions</td><td><strong>System Labels</strong><br><span class="method">GET</span><br><small>/api/system/labels</small></td><td class="metric-name">p90</td><td class="">252.2 ms</td><td class="">245.2 ms</td><td class="">262.3 ms</td><td class="">346.7 ms</td></tr><tr><td>My Actions</td><td><strong>System Labels</strong><br><span class="method">GET</span><br><small>/api/system/labels</small></td><td class="metric-name">p95</td><td class="">252.2 ms</td><td class="">245.3 ms</td><td class="">265.0 ms</td><td class="slow">3226.4 ms</td></tr><tr><td>My Actions</td><td><strong>System Labels</strong><br><span class="method">GET</span><br><small>/api/system/labels</small></td><td class="metric-name">p99</td><td class="">252.2 ms</td><td class="">245.4 ms</td><td class="">267.5 ms</td><td class="slow">5699.8 ms</td></tr><tr><td>My Actions</td><td><strong>System Labels</strong><br><span class="method">GET</span><br><small>/api/system/labels</small></td><td class="metric-name">Max</td><td class="">252.2 ms</td><td class="">245.4 ms</td><td class="">268.2 ms</td><td class="">8895.4 ms</td></tr><tr><td>My Actions</td><td><strong>System Labels</strong><br><span class="method">GET</span><br><small>/api/system/labels</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">42.40%</td></tr><tr><td>My Actions</td><td><strong>System Labels</strong><br><span class="method">GET</span><br><small>/api/system/labels</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>My Actions</td><td><strong>System Labels</strong><br><span class="method">GET</span><br><small>/api/system/labels</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>My Actions</td><td><strong>Pending Assignment Change Requests</strong><br><span class="method">GET</span><br><small>/api/workforce/assignment-change-requests?status=PENDING&amp;limit=10</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>My Actions</td><td><strong>Pending Assignment Change Requests</strong><br><span class="method">GET</span><br><small>/api/workforce/assignment-change-requests?status=PENDING&amp;limit=10</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>My Actions</td><td><strong>Pending Assignment Change Requests</strong><br><span class="method">GET</span><br><small>/api/workforce/assignment-change-requests?status=PENDING&amp;limit=10</small></td><td class="metric-name">p90</td><td class="">262.4 ms</td><td class="">255.6 ms</td><td class="">270.9 ms</td><td class="">451.0 ms</td></tr><tr><td>My Actions</td><td><strong>Pending Assignment Change Requests</strong><br><span class="method">GET</span><br><small>/api/workforce/assignment-change-requests?status=PENDING&amp;limit=10</small></td><td class="metric-name">p95</td><td class="">262.4 ms</td><td class="">256.2 ms</td><td class="">271.9 ms</td><td class="slow">3084.7 ms</td></tr><tr><td>My Actions</td><td><strong>Pending Assignment Change Requests</strong><br><span class="method">GET</span><br><small>/api/workforce/assignment-change-requests?status=PENDING&amp;limit=10</small></td><td class="metric-name">p99</td><td class="">262.4 ms</td><td class="">256.6 ms</td><td class="">272.6 ms</td><td class="slow">5903.2 ms</td></tr><tr><td>My Actions</td><td><strong>Pending Assignment Change Requests</strong><br><span class="method">GET</span><br><small>/api/workforce/assignment-change-requests?status=PENDING&amp;limit=10</small></td><td class="metric-name">Max</td><td class="">262.4 ms</td><td class="">256.7 ms</td><td class="">272.8 ms</td><td class="">17319.4 ms</td></tr><tr><td>My Actions</td><td><strong>Pending Assignment Change Requests</strong><br><span class="method">GET</span><br><small>/api/workforce/assignment-change-requests?status=PENDING&amp;limit=10</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">41.60%</td></tr><tr><td>My Actions</td><td><strong>Pending Assignment Change Requests</strong><br><span class="method">GET</span><br><small>/api/workforce/assignment-change-requests?status=PENDING&amp;limit=10</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>My Actions</td><td><strong>Pending Assignment Change Requests</strong><br><span class="method">GET</span><br><small>/api/workforce/assignment-change-requests?status=PENDING&amp;limit=10</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>My Actions</td><td><strong>Global Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=all</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>My Actions</td><td><strong>Global Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=all</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>My Actions</td><td><strong>Global Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=all</small></td><td class="metric-name">p90</td><td class="">258.2 ms</td><td class="">257.6 ms</td><td class="">269.2 ms</td><td class="">521.9 ms</td></tr><tr><td>My Actions</td><td><strong>Global Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=all</small></td><td class="metric-name">p95</td><td class="">258.2 ms</td><td class="">260.1 ms</td><td class="">270.5 ms</td><td class="">1456.9 ms</td></tr><tr><td>My Actions</td><td><strong>Global Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=all</small></td><td class="metric-name">p99</td><td class="">258.2 ms</td><td class="">262.2 ms</td><td class="">481.8 ms</td><td class="slow">5696.2 ms</td></tr><tr><td>My Actions</td><td><strong>Global Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=all</small></td><td class="metric-name">Max</td><td class="">258.2 ms</td><td class="">262.7 ms</td><td class="">548.5 ms</td><td class="">5811.3 ms</td></tr><tr><td>My Actions</td><td><strong>Global Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=all</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">40.80%</td></tr><tr><td>My Actions</td><td><strong>Global Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=all</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>My Actions</td><td><strong>Global Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=all</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>Projects</td><td><strong>Projects Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=projects-directory</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>Projects</td><td><strong>Projects Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=projects-directory</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Projects</td><td><strong>Projects Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=projects-directory</small></td><td class="metric-name">p90</td><td class="">256.5 ms</td><td class="">250.1 ms</td><td class="">285.2 ms</td><td class="">6010.9 ms</td></tr><tr><td>Projects</td><td><strong>Projects Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=projects-directory</small></td><td class="metric-name">p95</td><td class="">256.5 ms</td><td class="">250.8 ms</td><td class="">293.5 ms</td><td class="slow">7948.0 ms</td></tr><tr><td>Projects</td><td><strong>Projects Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=projects-directory</small></td><td class="metric-name">p99</td><td class="">256.5 ms</td><td class="">251.5 ms</td><td class="slow">2059.1 ms</td><td class="slow">11129.5 ms</td></tr><tr><td>Projects</td><td><strong>Projects Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=projects-directory</small></td><td class="metric-name">Max</td><td class="">256.5 ms</td><td class="">251.6 ms</td><td class="">2616.4 ms</td><td class="">11202.4 ms</td></tr><tr><td>Projects</td><td><strong>Projects Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=projects-directory</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">40.80%</td></tr><tr><td>Projects</td><td><strong>Projects Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=projects-directory</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Projects</td><td><strong>Projects Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=projects-directory</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>Projects</td><td><strong>System Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>Projects</td><td><strong>System Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Projects</td><td><strong>System Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions</small></td><td class="metric-name">p90</td><td class="">255.5 ms</td><td class="">246.3 ms</td><td class="">273.3 ms</td><td class="">434.2 ms</td></tr><tr><td>Projects</td><td><strong>System Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions</small></td><td class="metric-name">p95</td><td class="">255.5 ms</td><td class="">246.3 ms</td><td class="">287.2 ms</td><td class="">1028.2 ms</td></tr><tr><td>Projects</td><td><strong>System Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions</small></td><td class="metric-name">p99</td><td class="">255.5 ms</td><td class="">246.4 ms</td><td class="">454.0 ms</td><td class="slow">3075.8 ms</td></tr><tr><td>Projects</td><td><strong>System Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions</small></td><td class="metric-name">Max</td><td class="">255.5 ms</td><td class="">246.4 ms</td><td class="">505.8 ms</td><td class="">3114.5 ms</td></tr><tr><td>Projects</td><td><strong>System Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">40.00%</td></tr><tr><td>Projects</td><td><strong>System Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Projects</td><td><strong>System Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>Projects</td><td><strong>System Custom Fields</strong><br><span class="method">GET</span><br><small>/api/system/custom-fields</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>Projects</td><td><strong>System Custom Fields</strong><br><span class="method">GET</span><br><small>/api/system/custom-fields</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Projects</td><td><strong>System Custom Fields</strong><br><span class="method">GET</span><br><small>/api/system/custom-fields</small></td><td class="metric-name">p90</td><td class="">253.1 ms</td><td class="">245.1 ms</td><td class="">263.2 ms</td><td class="">337.5 ms</td></tr><tr><td>Projects</td><td><strong>System Custom Fields</strong><br><span class="method">GET</span><br><small>/api/system/custom-fields</small></td><td class="metric-name">p95</td><td class="">253.1 ms</td><td class="">245.3 ms</td><td class="">263.7 ms</td><td class="">621.8 ms</td></tr><tr><td>Projects</td><td><strong>System Custom Fields</strong><br><span class="method">GET</span><br><small>/api/system/custom-fields</small></td><td class="metric-name">p99</td><td class="">253.1 ms</td><td class="">245.4 ms</td><td class="">272.3 ms</td><td class="">991.8 ms</td></tr><tr><td>Projects</td><td><strong>System Custom Fields</strong><br><span class="method">GET</span><br><small>/api/system/custom-fields</small></td><td class="metric-name">Max</td><td class="">253.1 ms</td><td class="">245.4 ms</td><td class="">275.0 ms</td><td class="">3229.1 ms</td></tr><tr><td>Projects</td><td><strong>System Custom Fields</strong><br><span class="method">GET</span><br><small>/api/system/custom-fields</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">40.00%</td></tr><tr><td>Projects</td><td><strong>System Custom Fields</strong><br><span class="method">GET</span><br><small>/api/system/custom-fields</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Projects</td><td><strong>System Custom Fields</strong><br><span class="method">GET</span><br><small>/api/system/custom-fields</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>Projects</td><td><strong>Project Statuses</strong><br><span class="method">GET</span><br><small>/api/system/statuses?entityType=PROJECT</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>Projects</td><td><strong>Project Statuses</strong><br><span class="method">GET</span><br><small>/api/system/statuses?entityType=PROJECT</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Projects</td><td><strong>Project Statuses</strong><br><span class="method">GET</span><br><small>/api/system/statuses?entityType=PROJECT</small></td><td class="metric-name">p90</td><td class="">255.4 ms</td><td class="">246.8 ms</td><td class="">264.4 ms</td><td class="">352.9 ms</td></tr><tr><td>Projects</td><td><strong>Project Statuses</strong><br><span class="method">GET</span><br><small>/api/system/statuses?entityType=PROJECT</small></td><td class="metric-name">p95</td><td class="">255.4 ms</td><td class="">247.0 ms</td><td class="">267.3 ms</td><td class="">457.1 ms</td></tr><tr><td>Projects</td><td><strong>Project Statuses</strong><br><span class="method">GET</span><br><small>/api/system/statuses?entityType=PROJECT</small></td><td class="metric-name">p99</td><td class="">255.4 ms</td><td class="">247.2 ms</td><td class="slow">2410.4 ms</td><td class="slow">2864.2 ms</td></tr><tr><td>Projects</td><td><strong>Project Statuses</strong><br><span class="method">GET</span><br><small>/api/system/statuses?entityType=PROJECT</small></td><td class="metric-name">Max</td><td class="">255.4 ms</td><td class="">247.2 ms</td><td class="">3087.0 ms</td><td class="">5808.5 ms</td></tr><tr><td>Projects</td><td><strong>Project Statuses</strong><br><span class="method">GET</span><br><small>/api/system/statuses?entityType=PROJECT</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">40.00%</td></tr><tr><td>Projects</td><td><strong>Project Statuses</strong><br><span class="method">GET</span><br><small>/api/system/statuses?entityType=PROJECT</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Projects</td><td><strong>Project Statuses</strong><br><span class="method">GET</span><br><small>/api/system/statuses?entityType=PROJECT</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>Projects</td><td><strong>Client Accounts</strong><br><span class="method">GET</span><br><small>/api/client-accounts</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>Projects</td><td><strong>Client Accounts</strong><br><span class="method">GET</span><br><small>/api/client-accounts</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Projects</td><td><strong>Client Accounts</strong><br><span class="method">GET</span><br><small>/api/client-accounts</small></td><td class="metric-name">p90</td><td class="">741.0 ms</td><td class="">488.6 ms</td><td class="">768.6 ms</td><td class="">841.3 ms</td></tr><tr><td>Projects</td><td><strong>Client Accounts</strong><br><span class="method">GET</span><br><small>/api/client-accounts</small></td><td class="metric-name">p95</td><td class="">741.0 ms</td><td class="">489.3 ms</td><td class="">1126.7 ms</td><td class="">930.6 ms</td></tr><tr><td>Projects</td><td><strong>Client Accounts</strong><br><span class="method">GET</span><br><small>/api/client-accounts</small></td><td class="metric-name">p99</td><td class="">741.0 ms</td><td class="">489.9 ms</td><td class="slow">2881.8 ms</td><td class="slow">6558.3 ms</td></tr><tr><td>Projects</td><td><strong>Client Accounts</strong><br><span class="method">GET</span><br><small>/api/client-accounts</small></td><td class="metric-name">Max</td><td class="">741.0 ms</td><td class="">490.1 ms</td><td class="">3407.7 ms</td><td class="">6614.3 ms</td></tr><tr><td>Projects</td><td><strong>Client Accounts</strong><br><span class="method">GET</span><br><small>/api/client-accounts</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">40.00%</td></tr><tr><td>Projects</td><td><strong>Client Accounts</strong><br><span class="method">GET</span><br><small>/api/client-accounts</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Projects</td><td><strong>Client Accounts</strong><br><span class="method">GET</span><br><small>/api/client-accounts</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>Projects</td><td><strong>Projects Directory List</strong><br><span class="method">GET</span><br><small>/api/projects?limit=25&amp;offset=0&amp;sortBy=name&amp;sortOrder=ASC</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>Projects</td><td><strong>Projects Directory List</strong><br><span class="method">GET</span><br><small>/api/projects?limit=25&amp;offset=0&amp;sortBy=name&amp;sortOrder=ASC</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Projects</td><td><strong>Projects Directory List</strong><br><span class="method">GET</span><br><small>/api/projects?limit=25&amp;offset=0&amp;sortBy=name&amp;sortOrder=ASC</small></td><td class="metric-name">p90</td><td class="">346.0 ms</td><td class="">286.7 ms</td><td class="">304.9 ms</td><td class="">1684.9 ms</td></tr><tr><td>Projects</td><td><strong>Projects Directory List</strong><br><span class="method">GET</span><br><small>/api/projects?limit=25&amp;offset=0&amp;sortBy=name&amp;sortOrder=ASC</small></td><td class="metric-name">p95</td><td class="">346.0 ms</td><td class="">287.1 ms</td><td class="slow">2642.6 ms</td><td class="slow">3437.4 ms</td></tr><tr><td>Projects</td><td><strong>Projects Directory List</strong><br><span class="method">GET</span><br><small>/api/projects?limit=25&amp;offset=0&amp;sortBy=name&amp;sortOrder=ASC</small></td><td class="metric-name">p99</td><td class="">346.0 ms</td><td class="">287.5 ms</td><td class="slow">3443.3 ms</td><td class="slow">3511.6 ms</td></tr><tr><td>Projects</td><td><strong>Projects Directory List</strong><br><span class="method">GET</span><br><small>/api/projects?limit=25&amp;offset=0&amp;sortBy=name&amp;sortOrder=ASC</small></td><td class="metric-name">Max</td><td class="">346.0 ms</td><td class="">287.6 ms</td><td class="">3511.6 ms</td><td class="">11580.6 ms</td></tr><tr><td>Projects</td><td><strong>Projects Directory List</strong><br><span class="method">GET</span><br><small>/api/projects?limit=25&amp;offset=0&amp;sortBy=name&amp;sortOrder=ASC</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">40.00%</td></tr><tr><td>Projects</td><td><strong>Projects Directory List</strong><br><span class="method">GET</span><br><small>/api/projects?limit=25&amp;offset=0&amp;sortBy=name&amp;sortOrder=ASC</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Projects</td><td><strong>Projects Directory List</strong><br><span class="method">GET</span><br><small>/api/projects?limit=25&amp;offset=0&amp;sortBy=name&amp;sortOrder=ASC</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge check">CHECK</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>Workforce</td><td><strong>System Custom Fields</strong><br><span class="method">GET</span><br><small>/api/system/custom-fields</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>Workforce</td><td><strong>System Custom Fields</strong><br><span class="method">GET</span><br><small>/api/system/custom-fields</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Workforce</td><td><strong>System Custom Fields</strong><br><span class="method">GET</span><br><small>/api/system/custom-fields</small></td><td class="metric-name">p90</td><td class="">257.5 ms</td><td class="">245.5 ms</td><td class="">268.8 ms</td><td class="">4923.6 ms</td></tr><tr><td>Workforce</td><td><strong>System Custom Fields</strong><br><span class="method">GET</span><br><small>/api/system/custom-fields</small></td><td class="metric-name">p95</td><td class="">257.5 ms</td><td class="">245.5 ms</td><td class="">276.1 ms</td><td class="slow">5262.4 ms</td></tr><tr><td>Workforce</td><td><strong>System Custom Fields</strong><br><span class="method">GET</span><br><small>/api/system/custom-fields</small></td><td class="metric-name">p99</td><td class="">257.5 ms</td><td class="">245.5 ms</td><td class="">1833.9 ms</td><td class="slow">6463.7 ms</td></tr><tr><td>Workforce</td><td><strong>System Custom Fields</strong><br><span class="method">GET</span><br><small>/api/system/custom-fields</small></td><td class="metric-name">Max</td><td class="">257.5 ms</td><td class="">245.5 ms</td><td class="">2325.4 ms</td><td class="">11120.4 ms</td></tr><tr><td>Workforce</td><td><strong>System Custom Fields</strong><br><span class="method">GET</span><br><small>/api/system/custom-fields</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">40.00%</td></tr><tr><td>Workforce</td><td><strong>System Custom Fields</strong><br><span class="method">GET</span><br><small>/api/system/custom-fields</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Workforce</td><td><strong>System Custom Fields</strong><br><span class="method">GET</span><br><small>/api/system/custom-fields</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>Workforce</td><td><strong>All Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=true</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>Workforce</td><td><strong>All Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=true</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Workforce</td><td><strong>All Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=true</small></td><td class="metric-name">p90</td><td class="">736.3 ms</td><td class="">492.2 ms</td><td class="">871.9 ms</td><td class="">1810.0 ms</td></tr><tr><td>Workforce</td><td><strong>All Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=true</small></td><td class="metric-name">p95</td><td class="">736.3 ms</td><td class="">494.5 ms</td><td class="">967.6 ms</td><td class="slow">2169.6 ms</td></tr><tr><td>Workforce</td><td><strong>All Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=true</small></td><td class="metric-name">p99</td><td class="">736.3 ms</td><td class="">496.3 ms</td><td class="">988.8 ms</td><td class="slow">5660.3 ms</td></tr><tr><td>Workforce</td><td><strong>All Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=true</small></td><td class="metric-name">Max</td><td class="">736.3 ms</td><td class="">496.7 ms</td><td class="">992.2 ms</td><td class="">6538.4 ms</td></tr><tr><td>Workforce</td><td><strong>All Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=true</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">40.00%</td></tr><tr><td>Workforce</td><td><strong>All Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=true</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Workforce</td><td><strong>All Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=true</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>Workforce</td><td><strong>System Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>Workforce</td><td><strong>System Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Workforce</td><td><strong>System Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions</small></td><td class="metric-name">p90</td><td class="">257.8 ms</td><td class="">247.5 ms</td><td class="">270.4 ms</td><td class="">718.8 ms</td></tr><tr><td>Workforce</td><td><strong>System Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions</small></td><td class="metric-name">p95</td><td class="">257.8 ms</td><td class="">247.9 ms</td><td class="">538.3 ms</td><td class="slow">2383.2 ms</td></tr><tr><td>Workforce</td><td><strong>System Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions</small></td><td class="metric-name">p99</td><td class="">257.8 ms</td><td class="">248.1 ms</td><td class="">1778.2 ms</td><td class="slow">5443.9 ms</td></tr><tr><td>Workforce</td><td><strong>System Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions</small></td><td class="metric-name">Max</td><td class="">257.8 ms</td><td class="">248.2 ms</td><td class="">2148.6 ms</td><td class="">5832.7 ms</td></tr><tr><td>Workforce</td><td><strong>System Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">40.00%</td></tr><tr><td>Workforce</td><td><strong>System Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Workforce</td><td><strong>System Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>Workforce</td><td><strong>Workforce Directory List</strong><br><span class="method">GET</span><br><small>/api/workforce?limit=25&amp;offset=0&amp;sortBy=name&amp;sortOrder=ASC&amp;viewMode=directory</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>Workforce</td><td><strong>Workforce Directory List</strong><br><span class="method">GET</span><br><small>/api/workforce?limit=25&amp;offset=0&amp;sortBy=name&amp;sortOrder=ASC&amp;viewMode=directory</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Workforce</td><td><strong>Workforce Directory List</strong><br><span class="method">GET</span><br><small>/api/workforce?limit=25&amp;offset=0&amp;sortBy=name&amp;sortOrder=ASC&amp;viewMode=directory</small></td><td class="metric-name">p90</td><td class="">361.8 ms</td><td class="">350.9 ms</td><td class="">1377.5 ms</td><td class="">2423.8 ms</td></tr><tr><td>Workforce</td><td><strong>Workforce Directory List</strong><br><span class="method">GET</span><br><small>/api/workforce?limit=25&amp;offset=0&amp;sortBy=name&amp;sortOrder=ASC&amp;viewMode=directory</small></td><td class="metric-name">p95</td><td class="">361.8 ms</td><td class="">351.2 ms</td><td class="slow">3150.6 ms</td><td class="slow">3366.7 ms</td></tr><tr><td>Workforce</td><td><strong>Workforce Directory List</strong><br><span class="method">GET</span><br><small>/api/workforce?limit=25&amp;offset=0&amp;sortBy=name&amp;sortOrder=ASC&amp;viewMode=directory</small></td><td class="metric-name">p99</td><td class="">361.8 ms</td><td class="">351.4 ms</td><td class="slow">3757.5 ms</td><td class="slow">3943.0 ms</td></tr><tr><td>Workforce</td><td><strong>Workforce Directory List</strong><br><span class="method">GET</span><br><small>/api/workforce?limit=25&amp;offset=0&amp;sortBy=name&amp;sortOrder=ASC&amp;viewMode=directory</small></td><td class="metric-name">Max</td><td class="">361.8 ms</td><td class="">351.4 ms</td><td class="">3837.7 ms</td><td class="">5062.9 ms</td></tr><tr><td>Workforce</td><td><strong>Workforce Directory List</strong><br><span class="method">GET</span><br><small>/api/workforce?limit=25&amp;offset=0&amp;sortBy=name&amp;sortOrder=ASC&amp;viewMode=directory</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">40.00%</td></tr><tr><td>Workforce</td><td><strong>Workforce Directory List</strong><br><span class="method">GET</span><br><small>/api/workforce?limit=25&amp;offset=0&amp;sortBy=name&amp;sortOrder=ASC&amp;viewMode=directory</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Workforce</td><td><strong>Workforce Directory List</strong><br><span class="method">GET</span><br><small>/api/workforce?limit=25&amp;offset=0&amp;sortBy=name&amp;sortOrder=ASC&amp;viewMode=directory</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge check">CHECK</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>Workforce</td><td><strong>Workforce Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=workforce-directory</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>Workforce</td><td><strong>Workforce Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=workforce-directory</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Workforce</td><td><strong>Workforce Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=workforce-directory</small></td><td class="metric-name">p90</td><td class="">255.1 ms</td><td class="">250.2 ms</td><td class="">269.0 ms</td><td class="">1405.3 ms</td></tr><tr><td>Workforce</td><td><strong>Workforce Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=workforce-directory</small></td><td class="metric-name">p95</td><td class="">255.1 ms</td><td class="">251.2 ms</td><td class="">283.1 ms</td><td class="slow">2547.5 ms</td></tr><tr><td>Workforce</td><td><strong>Workforce Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=workforce-directory</small></td><td class="metric-name">p99</td><td class="">255.1 ms</td><td class="">252.0 ms</td><td class="slow">2371.7 ms</td><td class="slow">5562.2 ms</td></tr><tr><td>Workforce</td><td><strong>Workforce Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=workforce-directory</small></td><td class="metric-name">Max</td><td class="">255.1 ms</td><td class="">252.2 ms</td><td class="">3030.3 ms</td><td class="">6309.6 ms</td></tr><tr><td>Workforce</td><td><strong>Workforce Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=workforce-directory</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">40.00%</td></tr><tr><td>Workforce</td><td><strong>Workforce Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=workforce-directory</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Workforce</td><td><strong>Workforce Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=workforce-directory</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>Workforce</td><td><strong>Filtered Workforce List</strong><br><span class="method">GET</span><br><small>/api/workforce?trades=ADMINISTRATION%2CCARPENTRY%2CCONCRETE%2CCRANE%2CDESIGN%2FVDC&amp;limit=25&amp;offset=0&amp;sortBy=name&amp;sortOrder=ASC&amp;viewMode=directory</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>Workforce</td><td><strong>Filtered Workforce List</strong><br><span class="method">GET</span><br><small>/api/workforce?trades=ADMINISTRATION%2CCARPENTRY%2CCONCRETE%2CCRANE%2CDESIGN%2FVDC&amp;limit=25&amp;offset=0&amp;sortBy=name&amp;sortOrder=ASC&amp;viewMode=directory</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Workforce</td><td><strong>Filtered Workforce List</strong><br><span class="method">GET</span><br><small>/api/workforce?trades=ADMINISTRATION%2CCARPENTRY%2CCONCRETE%2CCRANE%2CDESIGN%2FVDC&amp;limit=25&amp;offset=0&amp;sortBy=name&amp;sortOrder=ASC&amp;viewMode=directory</small></td><td class="metric-name">p90</td><td class="">339.8 ms</td><td class="">333.2 ms</td><td class="">432.5 ms</td><td class="">3597.7 ms</td></tr><tr><td>Workforce</td><td><strong>Filtered Workforce List</strong><br><span class="method">GET</span><br><small>/api/workforce?trades=ADMINISTRATION%2CCARPENTRY%2CCONCRETE%2CCRANE%2CDESIGN%2FVDC&amp;limit=25&amp;offset=0&amp;sortBy=name&amp;sortOrder=ASC&amp;viewMode=directory</small></td><td class="metric-name">p95</td><td class="">339.8 ms</td><td class="">334.4 ms</td><td class="">552.1 ms</td><td class="slow">4647.0 ms</td></tr><tr><td>Workforce</td><td><strong>Filtered Workforce List</strong><br><span class="method">GET</span><br><small>/api/workforce?trades=ADMINISTRATION%2CCARPENTRY%2CCONCRETE%2CCRANE%2CDESIGN%2FVDC&amp;limit=25&amp;offset=0&amp;sortBy=name&amp;sortOrder=ASC&amp;viewMode=directory</small></td><td class="metric-name">p99</td><td class="">339.8 ms</td><td class="">335.4 ms</td><td class="">932.8 ms</td><td class="slow">7849.9 ms</td></tr><tr><td>Workforce</td><td><strong>Filtered Workforce List</strong><br><span class="method">GET</span><br><small>/api/workforce?trades=ADMINISTRATION%2CCARPENTRY%2CCONCRETE%2CCRANE%2CDESIGN%2FVDC&amp;limit=25&amp;offset=0&amp;sortBy=name&amp;sortOrder=ASC&amp;viewMode=directory</small></td><td class="metric-name">Max</td><td class="">339.8 ms</td><td class="">335.7 ms</td><td class="">1045.3 ms</td><td class="">8229.9 ms</td></tr><tr><td>Workforce</td><td><strong>Filtered Workforce List</strong><br><span class="method">GET</span><br><small>/api/workforce?trades=ADMINISTRATION%2CCARPENTRY%2CCONCRETE%2CCRANE%2CDESIGN%2FVDC&amp;limit=25&amp;offset=0&amp;sortBy=name&amp;sortOrder=ASC&amp;viewMode=directory</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">40.00%</td></tr><tr><td>Workforce</td><td><strong>Filtered Workforce List</strong><br><span class="method">GET</span><br><small>/api/workforce?trades=ADMINISTRATION%2CCARPENTRY%2CCONCRETE%2CCRANE%2CDESIGN%2FVDC&amp;limit=25&amp;offset=0&amp;sortBy=name&amp;sortOrder=ASC&amp;viewMode=directory</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Workforce</td><td><strong>Filtered Workforce List</strong><br><span class="method">GET</span><br><small>/api/workforce?trades=ADMINISTRATION%2CCARPENTRY%2CCONCRETE%2CCRANE%2CDESIGN%2FVDC&amp;limit=25&amp;offset=0&amp;sortBy=name&amp;sortOrder=ASC&amp;viewMode=directory</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>Scheduling</td><td><strong>Schedule Grid</strong><br><span class="method">GET</span><br><small>/api/workforce/assignments/schedule-grid?startDate=2026-09-02&amp;endDate=2026-12-09</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>Scheduling</td><td><strong>Schedule Grid</strong><br><span class="method">GET</span><br><small>/api/workforce/assignments/schedule-grid?startDate=2026-09-02&amp;endDate=2026-12-09</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Scheduling</td><td><strong>Schedule Grid</strong><br><span class="method">GET</span><br><small>/api/workforce/assignments/schedule-grid?startDate=2026-09-02&amp;endDate=2026-12-09</small></td><td class="metric-name">p90</td><td class="">2228.9 ms</td><td class="">2155.4 ms</td><td class="">4086.9 ms</td><td class="">10979.2 ms</td></tr><tr><td>Scheduling</td><td><strong>Schedule Grid</strong><br><span class="method">GET</span><br><small>/api/workforce/assignments/schedule-grid?startDate=2026-09-02&amp;endDate=2026-12-09</small></td><td class="metric-name">p95</td><td class="slow">2228.9 ms</td><td class="slow">2173.2 ms</td><td class="slow">5019.2 ms</td><td class="slow">13591.4 ms</td></tr><tr><td>Scheduling</td><td><strong>Schedule Grid</strong><br><span class="method">GET</span><br><small>/api/workforce/assignments/schedule-grid?startDate=2026-09-02&amp;endDate=2026-12-09</small></td><td class="metric-name">p99</td><td class="slow">2228.9 ms</td><td class="slow">2187.4 ms</td><td class="slow">10196.6 ms</td><td class="slow">17008.9 ms</td></tr><tr><td>Scheduling</td><td><strong>Schedule Grid</strong><br><span class="method">GET</span><br><small>/api/workforce/assignments/schedule-grid?startDate=2026-09-02&amp;endDate=2026-12-09</small></td><td class="metric-name">Max</td><td class="">2228.9 ms</td><td class="">2191.0 ms</td><td class="">11763.1 ms</td><td class="">21061.6 ms</td></tr><tr><td>Scheduling</td><td><strong>Schedule Grid</strong><br><span class="method">GET</span><br><small>/api/workforce/assignments/schedule-grid?startDate=2026-09-02&amp;endDate=2026-12-09</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">40.00%</td></tr><tr><td>Scheduling</td><td><strong>Schedule Grid</strong><br><span class="method">GET</span><br><small>/api/workforce/assignments/schedule-grid?startDate=2026-09-02&amp;endDate=2026-12-09</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Scheduling</td><td><strong>Schedule Grid</strong><br><span class="method">GET</span><br><small>/api/workforce/assignments/schedule-grid?startDate=2026-09-02&amp;endDate=2026-12-09</small></td><td class="metric-name">Status</td><td><span class="badge check">CHECK</span></td><td><span class="badge check">CHECK</span></td><td><span class="badge check">CHECK</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>Scheduling</td><td><strong>Requestable Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=false</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>Scheduling</td><td><strong>Requestable Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=false</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Scheduling</td><td><strong>Requestable Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=false</small></td><td class="metric-name">p90</td><td class="">262.9 ms</td><td class="">257.6 ms</td><td class="">1532.0 ms</td><td class="">6366.7 ms</td></tr><tr><td>Scheduling</td><td><strong>Requestable Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=false</small></td><td class="metric-name">p95</td><td class="">262.9 ms</td><td class="">258.3 ms</td><td class="">1865.8 ms</td><td class="slow">10528.5 ms</td></tr><tr><td>Scheduling</td><td><strong>Requestable Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=false</small></td><td class="metric-name">p99</td><td class="">262.9 ms</td><td class="">258.9 ms</td><td class="slow">2702.3 ms</td><td class="slow">11505.4 ms</td></tr><tr><td>Scheduling</td><td><strong>Requestable Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=false</small></td><td class="metric-name">Max</td><td class="">262.9 ms</td><td class="">259.0 ms</td><td class="">2965.9 ms</td><td class="">16980.4 ms</td></tr><tr><td>Scheduling</td><td><strong>Requestable Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=false</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">40.00%</td></tr><tr><td>Scheduling</td><td><strong>Requestable Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=false</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Scheduling</td><td><strong>Requestable Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=false</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>Scheduling</td><td><strong>Assignments Board</strong><br><span class="method">GET</span><br><small>/api/workforce/assignments/board?startDate=2026-09-02&amp;endDate=2026-12-09</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>Scheduling</td><td><strong>Assignments Board</strong><br><span class="method">GET</span><br><small>/api/workforce/assignments/board?startDate=2026-09-02&amp;endDate=2026-12-09</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Scheduling</td><td><strong>Assignments Board</strong><br><span class="method">GET</span><br><small>/api/workforce/assignments/board?startDate=2026-09-02&amp;endDate=2026-12-09</small></td><td class="metric-name">p90</td><td class="">3217.8 ms</td><td class="">1648.7 ms</td><td class="">3510.8 ms</td><td class="">5829.4 ms</td></tr><tr><td>Scheduling</td><td><strong>Assignments Board</strong><br><span class="method">GET</span><br><small>/api/workforce/assignments/board?startDate=2026-09-02&amp;endDate=2026-12-09</small></td><td class="metric-name">p95</td><td class="slow">3217.8 ms</td><td class="">1747.9 ms</td><td class="slow">3775.8 ms</td><td class="slow">7538.4 ms</td></tr><tr><td>Scheduling</td><td><strong>Assignments Board</strong><br><span class="method">GET</span><br><small>/api/workforce/assignments/board?startDate=2026-09-02&amp;endDate=2026-12-09</small></td><td class="metric-name">p99</td><td class="slow">3217.8 ms</td><td class="">1827.3 ms</td><td class="slow">4683.6 ms</td><td class="slow">12701.5 ms</td></tr><tr><td>Scheduling</td><td><strong>Assignments Board</strong><br><span class="method">GET</span><br><small>/api/workforce/assignments/board?startDate=2026-09-02&amp;endDate=2026-12-09</small></td><td class="metric-name">Max</td><td class="">3217.8 ms</td><td class="">1847.1 ms</td><td class="">4950.7 ms</td><td class="">18144.6 ms</td></tr><tr><td>Scheduling</td><td><strong>Assignments Board</strong><br><span class="method">GET</span><br><small>/api/workforce/assignments/board?startDate=2026-09-02&amp;endDate=2026-12-09</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">40.00%</td></tr><tr><td>Scheduling</td><td><strong>Assignments Board</strong><br><span class="method">GET</span><br><small>/api/workforce/assignments/board?startDate=2026-09-02&amp;endDate=2026-12-09</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Scheduling</td><td><strong>Assignments Board</strong><br><span class="method">GET</span><br><small>/api/workforce/assignments/board?startDate=2026-09-02&amp;endDate=2026-12-09</small></td><td class="metric-name">Status</td><td><span class="badge check">CHECK</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge check">CHECK</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>Scheduling</td><td><strong>Schedule Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=workforce-schedule</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>Scheduling</td><td><strong>Schedule Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=workforce-schedule</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Scheduling</td><td><strong>Schedule Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=workforce-schedule</small></td><td class="metric-name">p90</td><td class="">259.5 ms</td><td class="">260.9 ms</td><td class="">476.2 ms</td><td class="">2504.3 ms</td></tr><tr><td>Scheduling</td><td><strong>Schedule Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=workforce-schedule</small></td><td class="metric-name">p95</td><td class="">259.5 ms</td><td class="">263.7 ms</td><td class="slow">2060.8 ms</td><td class="slow">6270.2 ms</td></tr><tr><td>Scheduling</td><td><strong>Schedule Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=workforce-schedule</small></td><td class="metric-name">p99</td><td class="">259.5 ms</td><td class="">265.9 ms</td><td class="slow">2673.0 ms</td><td class="slow">8749.8 ms</td></tr><tr><td>Scheduling</td><td><strong>Schedule Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=workforce-schedule</small></td><td class="metric-name">Max</td><td class="">259.5 ms</td><td class="">266.5 ms</td><td class="">2751.0 ms</td><td class="">13381.2 ms</td></tr><tr><td>Scheduling</td><td><strong>Schedule Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=workforce-schedule</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">40.80%</td></tr><tr><td>Scheduling</td><td><strong>Schedule Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=workforce-schedule</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Scheduling</td><td><strong>Schedule Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=workforce-schedule</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge check">CHECK</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>Reports</td><td><strong>Projects Dataset</strong><br><span class="method">GET</span><br><small>/api/projects</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>Reports</td><td><strong>Projects Dataset</strong><br><span class="method">GET</span><br><small>/api/projects</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Reports</td><td><strong>Projects Dataset</strong><br><span class="method">GET</span><br><small>/api/projects</small></td><td class="metric-name">p90</td><td class="">1269.8 ms</td><td class="">542.5 ms</td><td class="">830.9 ms</td><td class="">3082.6 ms</td></tr><tr><td>Reports</td><td><strong>Projects Dataset</strong><br><span class="method">GET</span><br><small>/api/projects</small></td><td class="metric-name">p95</td><td class="">1269.8 ms</td><td class="">544.5 ms</td><td class="">1173.8 ms</td><td class="slow">4466.7 ms</td></tr><tr><td>Reports</td><td><strong>Projects Dataset</strong><br><span class="method">GET</span><br><small>/api/projects</small></td><td class="metric-name">p99</td><td class="">1269.8 ms</td><td class="">546.1 ms</td><td class="">1259.0 ms</td><td class="slow">13417.6 ms</td></tr><tr><td>Reports</td><td><strong>Projects Dataset</strong><br><span class="method">GET</span><br><small>/api/projects</small></td><td class="metric-name">Max</td><td class="">1269.8 ms</td><td class="">546.5 ms</td><td class="">1259.1 ms</td><td class="">18054.9 ms</td></tr><tr><td>Reports</td><td><strong>Projects Dataset</strong><br><span class="method">GET</span><br><small>/api/projects</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">40.00%</td></tr><tr><td>Reports</td><td><strong>Projects Dataset</strong><br><span class="method">GET</span><br><small>/api/projects</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Reports</td><td><strong>Projects Dataset</strong><br><span class="method">GET</span><br><small>/api/projects</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>Reports</td><td><strong>System Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>Reports</td><td><strong>System Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Reports</td><td><strong>System Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions</small></td><td class="metric-name">p90</td><td class="">255.1 ms</td><td class="">249.6 ms</td><td class="">292.7 ms</td><td class="">2867.3 ms</td></tr><tr><td>Reports</td><td><strong>System Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions</small></td><td class="metric-name">p95</td><td class="">255.1 ms</td><td class="">251.0 ms</td><td class="">301.8 ms</td><td class="slow">6255.8 ms</td></tr><tr><td>Reports</td><td><strong>System Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions</small></td><td class="metric-name">p99</td><td class="">255.1 ms</td><td class="">252.0 ms</td><td class="">1979.9 ms</td><td class="slow">8769.1 ms</td></tr><tr><td>Reports</td><td><strong>System Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions</small></td><td class="metric-name">Max</td><td class="">255.1 ms</td><td class="">252.3 ms</td><td class="">2509.3 ms</td><td class="">11980.4 ms</td></tr><tr><td>Reports</td><td><strong>System Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">40.80%</td></tr><tr><td>Reports</td><td><strong>System Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Reports</td><td><strong>System Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>Reports</td><td><strong>Workforce Dataset</strong><br><span class="method">GET</span><br><small>/api/workforce?includeNextAvailable=false</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>Reports</td><td><strong>Workforce Dataset</strong><br><span class="method">GET</span><br><small>/api/workforce?includeNextAvailable=false</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Reports</td><td><strong>Workforce Dataset</strong><br><span class="method">GET</span><br><small>/api/workforce?includeNextAvailable=false</small></td><td class="metric-name">p90</td><td class="">1665.5 ms</td><td class="">1659.9 ms</td><td class="">2619.3 ms</td><td class="">8754.2 ms</td></tr><tr><td>Reports</td><td><strong>Workforce Dataset</strong><br><span class="method">GET</span><br><small>/api/workforce?includeNextAvailable=false</small></td><td class="metric-name">p95</td><td class="">1665.5 ms</td><td class="">1667.3 ms</td><td class="slow">3288.9 ms</td><td class="slow">10964.2 ms</td></tr><tr><td>Reports</td><td><strong>Workforce Dataset</strong><br><span class="method">GET</span><br><small>/api/workforce?includeNextAvailable=false</small></td><td class="metric-name">p99</td><td class="">1665.5 ms</td><td class="">1673.1 ms</td><td class="slow">5388.0 ms</td><td class="slow">13667.1 ms</td></tr><tr><td>Reports</td><td><strong>Workforce Dataset</strong><br><span class="method">GET</span><br><small>/api/workforce?includeNextAvailable=false</small></td><td class="metric-name">Max</td><td class="">1665.5 ms</td><td class="">1674.6 ms</td><td class="">6006.2 ms</td><td class="">16169.4 ms</td></tr><tr><td>Reports</td><td><strong>Workforce Dataset</strong><br><span class="method">GET</span><br><small>/api/workforce?includeNextAvailable=false</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">40.80%</td></tr><tr><td>Reports</td><td><strong>Workforce Dataset</strong><br><span class="method">GET</span><br><small>/api/workforce?includeNextAvailable=false</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Reports</td><td><strong>Workforce Dataset</strong><br><span class="method">GET</span><br><small>/api/workforce?includeNextAvailable=false</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge check">CHECK</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>Reports</td><td><strong>All Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=true</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>Reports</td><td><strong>All Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=true</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Reports</td><td><strong>All Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=true</small></td><td class="metric-name">p90</td><td class="">261.2 ms</td><td class="">276.0 ms</td><td class="">298.7 ms</td><td class="">4133.7 ms</td></tr><tr><td>Reports</td><td><strong>All Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=true</small></td><td class="metric-name">p95</td><td class="">261.2 ms</td><td class="">281.8 ms</td><td class="">1491.9 ms</td><td class="slow">7331.7 ms</td></tr><tr><td>Reports</td><td><strong>All Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=true</small></td><td class="metric-name">p99</td><td class="">261.2 ms</td><td class="">286.4 ms</td><td class="slow">2944.5 ms</td><td class="slow">14954.2 ms</td></tr><tr><td>Reports</td><td><strong>All Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=true</small></td><td class="metric-name">Max</td><td class="">261.2 ms</td><td class="">287.6 ms</td><td class="">3309.2 ms</td><td class="">15797.9 ms</td></tr><tr><td>Reports</td><td><strong>All Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=true</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">41.60%</td></tr><tr><td>Reports</td><td><strong>All Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=true</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Reports</td><td><strong>All Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=true</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>Reports</td><td><strong>Fulfillment Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=reports-fulfillment</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>Reports</td><td><strong>Fulfillment Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=reports-fulfillment</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Reports</td><td><strong>Fulfillment Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=reports-fulfillment</small></td><td class="metric-name">p90</td><td class="">253.6 ms</td><td class="">249.6 ms</td><td class="">282.2 ms</td><td class="">5158.1 ms</td></tr><tr><td>Reports</td><td><strong>Fulfillment Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=reports-fulfillment</small></td><td class="metric-name">p95</td><td class="">253.6 ms</td><td class="">250.2 ms</td><td class="">333.7 ms</td><td class="slow">6393.1 ms</td></tr><tr><td>Reports</td><td><strong>Fulfillment Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=reports-fulfillment</small></td><td class="metric-name">p99</td><td class="">253.6 ms</td><td class="">250.6 ms</td><td class="">409.3 ms</td><td class="slow">19077.6 ms</td></tr><tr><td>Reports</td><td><strong>Fulfillment Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=reports-fulfillment</small></td><td class="metric-name">Max</td><td class="">253.6 ms</td><td class="">250.7 ms</td><td class="">429.3 ms</td><td class="">27940.6 ms</td></tr><tr><td>Reports</td><td><strong>Fulfillment Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=reports-fulfillment</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">42.40%</td></tr><tr><td>Reports</td><td><strong>Fulfillment Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=reports-fulfillment</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Reports</td><td><strong>Fulfillment Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=reports-fulfillment</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>Insights</td><td><strong>Insights Assignment Board</strong><br><span class="method">GET</span><br><small>/api/workforce/assignments/board?startDate=2026-06-09&amp;endDate=2026-12-09</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>Insights</td><td><strong>Insights Assignment Board</strong><br><span class="method">GET</span><br><small>/api/workforce/assignments/board?startDate=2026-06-09&amp;endDate=2026-12-09</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Insights</td><td><strong>Insights Assignment Board</strong><br><span class="method">GET</span><br><small>/api/workforce/assignments/board?startDate=2026-06-09&amp;endDate=2026-12-09</small></td><td class="metric-name">p90</td><td class="">2117.3 ms</td><td class="">2551.5 ms</td><td class="">6547.0 ms</td><td class="">10610.4 ms</td></tr><tr><td>Insights</td><td><strong>Insights Assignment Board</strong><br><span class="method">GET</span><br><small>/api/workforce/assignments/board?startDate=2026-06-09&amp;endDate=2026-12-09</small></td><td class="metric-name">p95</td><td class="slow">2117.3 ms</td><td class="slow">2561.7 ms</td><td class="slow">7915.9 ms</td><td class="slow">12490.7 ms</td></tr><tr><td>Insights</td><td><strong>Insights Assignment Board</strong><br><span class="method">GET</span><br><small>/api/workforce/assignments/board?startDate=2026-06-09&amp;endDate=2026-12-09</small></td><td class="metric-name">p99</td><td class="slow">2117.3 ms</td><td class="slow">2569.9 ms</td><td class="slow">11392.7 ms</td><td class="slow">21472.0 ms</td></tr><tr><td>Insights</td><td><strong>Insights Assignment Board</strong><br><span class="method">GET</span><br><small>/api/workforce/assignments/board?startDate=2026-06-09&amp;endDate=2026-12-09</small></td><td class="metric-name">Max</td><td class="">2117.3 ms</td><td class="">2571.9 ms</td><td class="">12406.9 ms</td><td class="">23153.9 ms</td></tr><tr><td>Insights</td><td><strong>Insights Assignment Board</strong><br><span class="method">GET</span><br><small>/api/workforce/assignments/board?startDate=2026-06-09&amp;endDate=2026-12-09</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">44.80%</td></tr><tr><td>Insights</td><td><strong>Insights Assignment Board</strong><br><span class="method">GET</span><br><small>/api/workforce/assignments/board?startDate=2026-06-09&amp;endDate=2026-12-09</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Insights</td><td><strong>Insights Assignment Board</strong><br><span class="method">GET</span><br><small>/api/workforce/assignments/board?startDate=2026-06-09&amp;endDate=2026-12-09</small></td><td class="metric-name">Status</td><td><span class="badge check">CHECK</span></td><td><span class="badge check">CHECK</span></td><td><span class="badge check">CHECK</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>Insights</td><td><strong>Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=true</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>Insights</td><td><strong>Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=true</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Insights</td><td><strong>Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=true</small></td><td class="metric-name">p90</td><td class="">258.0 ms</td><td class="">256.7 ms</td><td class="">2456.1 ms</td><td class="">7761.8 ms</td></tr><tr><td>Insights</td><td><strong>Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=true</small></td><td class="metric-name">p95</td><td class="">258.0 ms</td><td class="">257.7 ms</td><td class="slow">2704.0 ms</td><td class="slow">14047.9 ms</td></tr><tr><td>Insights</td><td><strong>Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=true</small></td><td class="metric-name">p99</td><td class="">258.0 ms</td><td class="">258.4 ms</td><td class="slow">2800.8 ms</td><td class="slow">19808.2 ms</td></tr><tr><td>Insights</td><td><strong>Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=true</small></td><td class="metric-name">Max</td><td class="">258.0 ms</td><td class="">258.6 ms</td><td class="">2812.1 ms</td><td class="">27317.5 ms</td></tr><tr><td>Insights</td><td><strong>Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=true</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">47.20%</td></tr><tr><td>Insights</td><td><strong>Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=true</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Insights</td><td><strong>Resource Trades</strong><br><span class="method">GET</span><br><small>/api/resource-trades?includeNonRequestable=true</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge check">CHECK</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>Insights</td><td><strong>Insights Workforce Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=insights-workforce</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>Insights</td><td><strong>Insights Workforce Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=insights-workforce</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Insights</td><td><strong>Insights Workforce Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=insights-workforce</small></td><td class="metric-name">p90</td><td class="">253.3 ms</td><td class="">245.5 ms</td><td class="">274.1 ms</td><td class="">6402.8 ms</td></tr><tr><td>Insights</td><td><strong>Insights Workforce Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=insights-workforce</small></td><td class="metric-name">p95</td><td class="">253.3 ms</td><td class="">245.6 ms</td><td class="">296.6 ms</td><td class="slow">10504.8 ms</td></tr><tr><td>Insights</td><td><strong>Insights Workforce Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=insights-workforce</small></td><td class="metric-name">p99</td><td class="">253.3 ms</td><td class="">245.6 ms</td><td class="slow">2340.3 ms</td><td class="slow">22076.3 ms</td></tr><tr><td>Insights</td><td><strong>Insights Workforce Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=insights-workforce</small></td><td class="metric-name">Max</td><td class="">253.3 ms</td><td class="">245.7 ms</td><td class="">2984.0 ms</td><td class="">27995.2 ms</td></tr><tr><td>Insights</td><td><strong>Insights Workforce Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=insights-workforce</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">51.20%</td></tr><tr><td>Insights</td><td><strong>Insights Workforce Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=insights-workforce</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Insights</td><td><strong>Insights Workforce Saved Views</strong><br><span class="method">GET</span><br><small>/api/workforce/saved-views?featureKey=insights-workforce</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>Insights</td><td><strong>Insights Projects</strong><br><span class="method">GET</span><br><small>/api/projects</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>Insights</td><td><strong>Insights Projects</strong><br><span class="method">GET</span><br><small>/api/projects</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Insights</td><td><strong>Insights Projects</strong><br><span class="method">GET</span><br><small>/api/projects</small></td><td class="metric-name">p90</td><td class="">332.0 ms</td><td class="">302.9 ms</td><td class="">1014.6 ms</td><td class="">4129.0 ms</td></tr><tr><td>Insights</td><td><strong>Insights Projects</strong><br><span class="method">GET</span><br><small>/api/projects</small></td><td class="metric-name">p95</td><td class="">332.0 ms</td><td class="">303.0 ms</td><td class="slow">3783.5 ms</td><td class="slow">7834.0 ms</td></tr><tr><td>Insights</td><td><strong>Insights Projects</strong><br><span class="method">GET</span><br><small>/api/projects</small></td><td class="metric-name">p99</td><td class="">332.0 ms</td><td class="">303.0 ms</td><td class="slow">6191.3 ms</td><td class="slow">18534.4 ms</td></tr><tr><td>Insights</td><td><strong>Insights Projects</strong><br><span class="method">GET</span><br><small>/api/projects</small></td><td class="metric-name">Max</td><td class="">332.0 ms</td><td class="">303.0 ms</td><td class="">6755.3 ms</td><td class="">18571.3 ms</td></tr><tr><td>Insights</td><td><strong>Insights Projects</strong><br><span class="method">GET</span><br><small>/api/projects</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">50.40%</td></tr><tr><td>Insights</td><td><strong>Insights Projects</strong><br><span class="method">GET</span><br><small>/api/projects</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Insights</td><td><strong>Insights Projects</strong><br><span class="method">GET</span><br><small>/api/projects</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge check">CHECK</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>Insights</td><td><strong>Active Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions?status=active</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>Insights</td><td><strong>Active Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions?status=active</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Insights</td><td><strong>Active Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions?status=active</small></td><td class="metric-name">p90</td><td class="">255.9 ms</td><td class="">246.2 ms</td><td class="">1249.3 ms</td><td class="">8483.6 ms</td></tr><tr><td>Insights</td><td><strong>Active Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions?status=active</small></td><td class="metric-name">p95</td><td class="">255.9 ms</td><td class="">246.4 ms</td><td class="slow">2729.3 ms</td><td class="slow">10076.2 ms</td></tr><tr><td>Insights</td><td><strong>Active Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions?status=active</small></td><td class="metric-name">p99</td><td class="">255.9 ms</td><td class="">246.5 ms</td><td class="slow">3044.1 ms</td><td class="slow">13512.7 ms</td></tr><tr><td>Insights</td><td><strong>Active Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions?status=active</small></td><td class="metric-name">Max</td><td class="">255.9 ms</td><td class="">246.5 ms</td><td class="">3064.2 ms</td><td class="">17389.6 ms</td></tr><tr><td>Insights</td><td><strong>Active Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions?status=active</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">51.20%</td></tr><tr><td>Insights</td><td><strong>Active Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions?status=active</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Insights</td><td><strong>Active Regions</strong><br><span class="method">GET</span><br><small>/api/system/regions?status=active</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge check">CHECK</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>Insights</td><td><strong>Lines of Business</strong><br><span class="method">GET</span><br><small>/api/system/lob</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>Insights</td><td><strong>Lines of Business</strong><br><span class="method">GET</span><br><small>/api/system/lob</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Insights</td><td><strong>Lines of Business</strong><br><span class="method">GET</span><br><small>/api/system/lob</small></td><td class="metric-name">p90</td><td class="">256.5 ms</td><td class="">255.2 ms</td><td class="">292.5 ms</td><td class="">703.9 ms</td></tr><tr><td>Insights</td><td><strong>Lines of Business</strong><br><span class="method">GET</span><br><small>/api/system/lob</small></td><td class="metric-name">p95</td><td class="">256.5 ms</td><td class="">258.2 ms</td><td class="">486.0 ms</td><td class="slow">3180.1 ms</td></tr><tr><td>Insights</td><td><strong>Lines of Business</strong><br><span class="method">GET</span><br><small>/api/system/lob</small></td><td class="metric-name">p99</td><td class="">256.5 ms</td><td class="">260.6 ms</td><td class="slow">2469.8 ms</td><td class="slow">6013.8 ms</td></tr><tr><td>Insights</td><td><strong>Lines of Business</strong><br><span class="method">GET</span><br><small>/api/system/lob</small></td><td class="metric-name">Max</td><td class="">256.5 ms</td><td class="">261.1 ms</td><td class="">3081.1 ms</td><td class="">12796.8 ms</td></tr><tr><td>Insights</td><td><strong>Lines of Business</strong><br><span class="method">GET</span><br><small>/api/system/lob</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">51.20%</td></tr><tr><td>Insights</td><td><strong>Lines of Business</strong><br><span class="method">GET</span><br><small>/api/system/lob</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Insights</td><td><strong>Lines of Business</strong><br><span class="method">GET</span><br><small>/api/system/lob</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>Insights</td><td><strong>Executive Workforce Summary</strong><br><span class="method">GET</span><br><small>/api/reporting/workforce/dashboard-summary?startDate=2026-01-01&amp;endDate=2026-12-31</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>Insights</td><td><strong>Executive Workforce Summary</strong><br><span class="method">GET</span><br><small>/api/reporting/workforce/dashboard-summary?startDate=2026-01-01&amp;endDate=2026-12-31</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Insights</td><td><strong>Executive Workforce Summary</strong><br><span class="method">GET</span><br><small>/api/reporting/workforce/dashboard-summary?startDate=2026-01-01&amp;endDate=2026-12-31</small></td><td class="metric-name">p90</td><td class="">3165.5 ms</td><td class="">3160.4 ms</td><td class="">6221.4 ms</td><td class="">16534.9 ms</td></tr><tr><td>Insights</td><td><strong>Executive Workforce Summary</strong><br><span class="method">GET</span><br><small>/api/reporting/workforce/dashboard-summary?startDate=2026-01-01&amp;endDate=2026-12-31</small></td><td class="metric-name">p95</td><td class="slow">3165.5 ms</td><td class="slow">3167.8 ms</td><td class="slow">6321.4 ms</td><td class="slow">20243.4 ms</td></tr><tr><td>Insights</td><td><strong>Executive Workforce Summary</strong><br><span class="method">GET</span><br><small>/api/reporting/workforce/dashboard-summary?startDate=2026-01-01&amp;endDate=2026-12-31</small></td><td class="metric-name">p99</td><td class="slow">3165.5 ms</td><td class="slow">3173.7 ms</td><td class="slow">8198.9 ms</td><td class="slow">30817.9 ms</td></tr><tr><td>Insights</td><td><strong>Executive Workforce Summary</strong><br><span class="method">GET</span><br><small>/api/reporting/workforce/dashboard-summary?startDate=2026-01-01&amp;endDate=2026-12-31</small></td><td class="metric-name">Max</td><td class="">3165.5 ms</td><td class="">3175.2 ms</td><td class="">8789.0 ms</td><td class="">31679.0 ms</td></tr><tr><td>Insights</td><td><strong>Executive Workforce Summary</strong><br><span class="method">GET</span><br><small>/api/reporting/workforce/dashboard-summary?startDate=2026-01-01&amp;endDate=2026-12-31</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">60.00%</td></tr><tr><td>Insights</td><td><strong>Executive Workforce Summary</strong><br><span class="method">GET</span><br><small>/api/reporting/workforce/dashboard-summary?startDate=2026-01-01&amp;endDate=2026-12-31</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Insights</td><td><strong>Executive Workforce Summary</strong><br><span class="method">GET</span><br><small>/api/reporting/workforce/dashboard-summary?startDate=2026-01-01&amp;endDate=2026-12-31</small></td><td class="metric-name">Status</td><td><span class="badge check">CHECK</span></td><td><span class="badge check">CHECK</span></td><td><span class="badge check">CHECK</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>Admin Console</td><td><strong>User Roles</strong><br><span class="method">GET</span><br><small>/api/users/roles</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>Admin Console</td><td><strong>User Roles</strong><br><span class="method">GET</span><br><small>/api/users/roles</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Admin Console</td><td><strong>User Roles</strong><br><span class="method">GET</span><br><small>/api/users/roles</small></td><td class="metric-name">p90</td><td class="">258.9 ms</td><td class="">431.4 ms</td><td class="">2350.2 ms</td><td class="">12845.5 ms</td></tr><tr><td>Admin Console</td><td><strong>User Roles</strong><br><span class="method">GET</span><br><small>/api/users/roles</small></td><td class="metric-name">p95</td><td class="">258.9 ms</td><td class="">492.8 ms</td><td class="slow">2533.9 ms</td><td class="slow">16923.4 ms</td></tr><tr><td>Admin Console</td><td><strong>User Roles</strong><br><span class="method">GET</span><br><small>/api/users/roles</small></td><td class="metric-name">p99</td><td class="">258.9 ms</td><td class="">541.9 ms</td><td class="slow">4278.5 ms</td><td class="slow">20561.8 ms</td></tr><tr><td>Admin Console</td><td><strong>User Roles</strong><br><span class="method">GET</span><br><small>/api/users/roles</small></td><td class="metric-name">Max</td><td class="">258.9 ms</td><td class="">554.2 ms</td><td class="">4819.1 ms</td><td class="">27486.0 ms</td></tr><tr><td>Admin Console</td><td><strong>User Roles</strong><br><span class="method">GET</span><br><small>/api/users/roles</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">52.00%</td></tr><tr><td>Admin Console</td><td><strong>User Roles</strong><br><span class="method">GET</span><br><small>/api/users/roles</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Admin Console</td><td><strong>User Roles</strong><br><span class="method">GET</span><br><small>/api/users/roles</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge check">CHECK</span></td><td><span class="badge fail">FAILED</span></td></tr><tr><td>Admin Console</td><td><strong>User Directory</strong><br><span class="method">GET</span><br><small>/api/users</small></td><td class="metric-name">Requests</td><td class="">1</td><td class="">5</td><td class="">25</td><td class="">125</td></tr><tr><td>Admin Console</td><td><strong>User Directory</strong><br><span class="method">GET</span><br><small>/api/users</small></td><td class="metric-name">p50</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Admin Console</td><td><strong>User Directory</strong><br><span class="method">GET</span><br><small>/api/users</small></td><td class="metric-name">p90</td><td class="">494.4 ms</td><td class="">477.6 ms</td><td class="">2466.9 ms</td><td class="">2406.6 ms</td></tr><tr><td>Admin Console</td><td><strong>User Directory</strong><br><span class="method">GET</span><br><small>/api/users</small></td><td class="metric-name">p95</td><td class="">494.4 ms</td><td class="">477.8 ms</td><td class="slow">3365.3 ms</td><td class="slow">3468.7 ms</td></tr><tr><td>Admin Console</td><td><strong>User Directory</strong><br><span class="method">GET</span><br><small>/api/users</small></td><td class="metric-name">p99</td><td class="">494.4 ms</td><td class="">478.0 ms</td><td class="slow">3417.0 ms</td><td class="slow">5427.7 ms</td></tr><tr><td>Admin Console</td><td><strong>User Directory</strong><br><span class="method">GET</span><br><small>/api/users</small></td><td class="metric-name">Max</td><td class="">494.4 ms</td><td class="">478.0 ms</td><td class="">3426.7 ms</td><td class="">6919.5 ms</td></tr><tr><td>Admin Console</td><td><strong>User Directory</strong><br><span class="method">GET</span><br><small>/api/users</small></td><td class="metric-name">Error %</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td><td class="slow">52.00%</td></tr><tr><td>Admin Console</td><td><strong>User Directory</strong><br><span class="method">GET</span><br><small>/api/users</small></td><td class="metric-name">RPS</td><td class="">—</td><td class="">—</td><td class="">—</td><td class="">—</td></tr><tr><td>Admin Console</td><td><strong>User Directory</strong><br><span class="method">GET</span><br><small>/api/users</small></td><td class="metric-name">Status</td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge check">CHECK</span></td><td><span class="badge fail">FAILED</span></td></tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+
+<h2>
+    API Page Duration – p95
+</h2>
+
+
+<div class="table-wrap">
+
+<table>
+
+<thead>
+
+<tr>
+
+    <th>Page</th>
+
+    
+        <th>
+            1 VU / 1 iter
+            <br>
+            <small>
+                2026-09-16T13:03:51.418Z
+            </small>
+        </th>
+        
+        <th>
+            1 VU / 5 iters
+            <br>
+            <small>
+                2026-09-16T13:06:24.143Z
+            </small>
+        </th>
+        
+        <th>
+            5 VUs / 5 iters
+            <br>
+            <small>
+                2026-09-16T13:10:18.430Z
+            </small>
+        </th>
+        
+        <th>
+            25 VUs / 5 iters
+            <br>
+            <small>
+                2026-09-16T13:16:34.234Z
+            </small>
+        </th>
+        
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+<tr><td class="metric-name">My Actions</td><td class="slow">3925.0 ms</td><td class="slow">3402.2 ms</td><td class="slow">11387.8 ms</td><td class="slow">37030.8 ms</td></tr><tr><td class="metric-name">Projects</td><td class="slow">2109.0 ms</td><td class="">1762.6 ms</td><td class="slow">4913.2 ms</td><td class="slow">12939.2 ms</td></tr><tr><td class="metric-name">Workforce</td><td class="slow">2211.0 ms</td><td class="">1918.4 ms</td><td class="slow">5577.0 ms</td><td class="slow">16225.6 ms</td></tr><tr><td class="metric-name">Scheduling</td><td class="slow">5972.0 ms</td><td class="slow">4377.6 ms</td><td class="slow">13101.8 ms</td><td class="slow">24293.2 ms</td></tr><tr><td class="metric-name">Reports</td><td class="slow">3708.0 ms</td><td class="slow">2954.4 ms</td><td class="slow">5942.8 ms</td><td class="slow">36124.0 ms</td></tr><tr><td class="metric-name">Insights</td><td class="slow">6642.0 ms</td><td class="slow">7018.2 ms</td><td class="slow">17060.8 ms</td><td class="slow">51857.2 ms</td></tr><tr><td class="metric-name">Admin Console</td><td class="">754.0 ms</td><td class="">971.2 ms</td><td class="slow">4986.4 ms</td><td class="slow">17454.6 ms</td></tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+
+<hr
+    class="section-divider"
+>
+
+
+
+    <h2>💻 UI Browser Performance</h2>
+
+    <div class="callout">
+        <strong>Functional gate:</strong>
+        checks pass rate = 100%,
+        UI page success &ge; 99%,
+        browser HTTP failures &lt; 1%.
+        <br>
+
+        <strong>Web Vitals:</strong>
+        performance observations only.
+        A threshold breach shows
+        <span class="badge obs">OBS</span>
+        and does <strong>not</strong>
+        fail the UI functional stage.
+        <br>
+
+        <small>
+            Source files:
+            ui_1vu_1iter.json, ui_1vu_5iter.json, ui_5vu_5iter.json
+        </small>
+    </div>
+
+
+    <h3>Functional Results</h3>
+
+    <div class="table-wrap">
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Metric</th>
+                    <th>UI 1 VU / 1 iter</th><th>UI 1 VU / 5 iters</th><th>UI 5 VUs / 5 iters</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+        <td class="metric-name">
+            <strong>Stage Result</strong>
+        </td>
+        <td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td><td><span class="badge pass">PASS</span></td></tr>
+
+                <tr><td class="metric-name">Checks pass rate</td><td class="">100.00%</td><td class="">100.00%</td><td class="">100.00%</td></tr>
+
+                <tr><td class="metric-name">UI page success rate</td><td class="">100.00%</td><td class="">100.00%</td><td class="">100.00%</td></tr>
+
+                <tr><td class="metric-name">Browser HTTP failed rate</td><td class="">0.00%</td><td class="">0.00%</td><td class="">0.00%</td></tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <h3>Navigation &amp; Page Duration</h3>
+
+    <div class="table-wrap">
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Metric</th>
+                    <th>UI 1 VU / 1 iter</th><th>UI 1 VU / 5 iters</th><th>UI 5 VUs / 5 iters</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr><td class="metric-name">UI navigation duration — avg</td><td class="">748.0 ms</td><td class="">936.7 ms</td><td class="">946.7 ms</td></tr>
+
+                <tr><td class="metric-name">UI navigation duration — p95</td><td class="">1593.0 ms</td><td class="slow">2424.8 ms</td><td class="slow">2214.0 ms</td></tr>
+
+                <tr><td class="metric-name">UI navigation duration — p99</td><td class="">1769.0 ms</td><td class="slow">2553.0 ms</td><td class="slow">2932.2 ms</td></tr>
+
+                <tr><td class="metric-name">UI page duration — avg</td><td class="">1147.7 ms</td><td class="">1362.5 ms</td><td class="">1365.0 ms</td></tr>
+
+                <tr><td class="metric-name">UI page duration — p95</td><td class="slow">3026.1 ms</td><td class="slow">4096.4 ms</td><td class="slow">3908.1 ms</td></tr>
+
+                <tr><td class="metric-name">UI page duration — p99</td><td class="slow">3442.0 ms</td><td class="slow">4242.9 ms</td><td class="slow">4335.5 ms</td></tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <h3>
+        Web Vitals (p95) —
+        Performance Observations
+    </h3>
+
+    <div class="callout">
+
+        <span class="badge obs">OBS</span>
+        = threshold exceeded;
+        recorded as a performance observation.
+
+        Does <strong>not</strong>
+        stop workload progression.
+
+    </div>
+
+    <div class="table-wrap">
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Vital</th>
+                    <th>UI 1 VU / 1 iter</th><th>UI 1 VU / 5 iters</th><th>UI 5 VUs / 5 iters</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+        <td class="metric-name">
+            LCP
+            <small>(p95)</small>
+        </td>
+        
+            <td>
+                3740.0 ms
+                <br>
+                <span class="badge obs">OBS</span>
+                <br><small>threshold: &lt; 2500 ms</small>
+            </td>
+            
+            <td>
+                4695.2 ms
+                <br>
+                <span class="badge obs">OBS</span>
+                <br><small>threshold: &lt; 2500 ms</small>
+            </td>
+            
+            <td>
+                4900.0 ms
+                <br>
+                <span class="badge obs">OBS</span>
+                <br><small>threshold: &lt; 2500 ms</small>
+            </td>
+            </tr>
+
+                <tr>
+        <td class="metric-name">
+            FCP
+            <small>(p95)</small>
+        </td>
+        
+            <td>
+                1424.0 ms
+                <br>
+                <span class="badge pass">PASS</span>
+                <br><small>threshold: &lt; 1800 ms</small>
+            </td>
+            
+            <td>
+                1474.4 ms
+                <br>
+                <span class="badge pass">PASS</span>
+                <br><small>threshold: &lt; 1800 ms</small>
+            </td>
+            
+            <td>
+                1639.2 ms
+                <br>
+                <span class="badge pass">PASS</span>
+                <br><small>threshold: &lt; 1800 ms</small>
+            </td>
+            </tr>
+
+                <tr>
+        <td class="metric-name">
+            TTFB
+            <small>(p95)</small>
+        </td>
+        
+            <td>
+                815.1 ms
+                <br>
+                <span class="badge obs">OBS</span>
+                <br><small>threshold: &lt; 800 ms</small>
+            </td>
+            
+            <td>
+                843.6 ms
+                <br>
+                <span class="badge obs">OBS</span>
+                <br><small>threshold: &lt; 800 ms</small>
+            </td>
+            
+            <td>
+                1026.9 ms
+                <br>
+                <span class="badge obs">OBS</span>
+                <br><small>threshold: &lt; 800 ms</small>
+            </td>
+            </tr>
+
+                <tr>
+        <td class="metric-name">
+            INP
+            <small>(p95)</small>
+        </td>
+        
+            <td>
+                64.0 ms
+                <br>
+                <span class="badge pass">PASS</span>
+                <br><small>threshold: &lt; 200 ms</small>
+            </td>
+            
+            <td>
+                168.0 ms
+                <br>
+                <span class="badge pass">PASS</span>
+                <br><small>threshold: &lt; 200 ms</small>
+            </td>
+            
+            <td>
+                160.0 ms
+                <br>
+                <span class="badge pass">PASS</span>
+                <br><small>threshold: &lt; 200 ms</small>
+            </td>
+            </tr>
+
+                <tr>
+        <td class="metric-name">
+            CLS
+            <small>(p95)</small>
+        </td>
+        
+            <td>
+                0.001
+                <br>
+                <span class="badge pass">PASS</span>
+                <br><small>threshold: &lt; 0.1</small>
+            </td>
+            
+            <td>
+                0.085
+                <br>
+                <span class="badge pass">PASS</span>
+                <br><small>threshold: &lt; 0.1</small>
+            </td>
+            
+            <td>
+                0.016
+                <br>
+                <span class="badge pass">PASS</span>
+                <br><small>threshold: &lt; 0.1</small>
+            </td>
+            </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+    
+
+
+
+    <h2>📊 UI vs API Comparison</h2>
+
+    <div class="callout">
+
+        Side-by-side UI browser performance
+        vs API performance at matching workload stages.
+
+        <br>
+
+        <strong>
+            Important:
+        </strong>
+
+        API p95 in this table is the
+        <strong>overall HTTP request p95</strong>.
+
+        Endpoint-specific p50/p90/p95/p99,
+        errors and RPS are available in the
+        <strong>API Endpoint-Level Metric Comparison</strong>
+        section above.
+
+        <br>
+
+        LCP and TTFB are performance observations.
+
+        An exceeded threshold does not block stages.
+
+    </div>
+
+    <div class="table-wrap">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Stage</th>
+                    <th>UI Functional</th>
+                    <th>UI Nav p95</th>
+                    <th>UI Page p95</th>
+                    <th>LCP p95</th>
+                    <th>TTFB p95</th>
+                    <th>Overall API p95</th>
+                    <th>API HTTP Fail %</th>
+                    <th>API RPS</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                
+            <tr>
+
+                <td>
+                    <strong>
+                        UI 1 VU / 1 iter
+                    </strong>
+                </td>
+
+                <td>
+                    <span class="badge pass">PASS</span>
+                </td>
+
+                <td>
+                    1593.0 ms
+                </td>
+
+                <td>
+                    3026.1 ms
+                </td>
+
+                <td>
+                    3740.0 ms
+                </td>
+
+                <td>
+                    815.1 ms
+                </td>
+
+                <td>
+                    2322.6 ms
+                </td>
+
+                <td>
+                    0.00%
+                </td>
+
+                <td>
+                    —
+                </td>
+
+            </tr>
+            
+            <tr>
+
+                <td>
+                    <strong>
+                        UI 1 VU / 5 iters
+                    </strong>
+                </td>
+
+                <td>
+                    <span class="badge pass">PASS</span>
+                </td>
+
+                <td>
+                    2424.8 ms
+                </td>
+
+                <td>
+                    4096.4 ms
+                </td>
+
+                <td>
+                    4695.2 ms
+                </td>
+
+                <td>
+                    843.6 ms
+                </td>
+
+                <td>
+                    2223.1 ms
+                </td>
+
+                <td>
+                    0.00%
+                </td>
+
+                <td>
+                    —
+                </td>
+
+            </tr>
+            
+            <tr>
+
+                <td>
+                    <strong>
+                        UI 5 VUs / 5 iters
+                    </strong>
+                </td>
+
+                <td>
+                    <span class="badge pass">PASS</span>
+                </td>
+
+                <td>
+                    2214.0 ms
+                </td>
+
+                <td>
+                    3908.1 ms
+                </td>
+
+                <td>
+                    4900.0 ms
+                </td>
+
+                <td>
+                    1026.9 ms
+                </td>
+
+                <td>
+                    3271.2 ms
+                </td>
+
+                <td>
+                    0.00%
+                </td>
+
+                <td>
+                    —
+                </td>
+
+            </tr>
+            
+
+            </tbody>
+
+        </table>
+
+    </div>
+    
+
+
+
+<h2>📝 Performance Information / Execution Notes</h2>
+
+<div class="callout">
+
+    <strong>How to interpret the report:</strong>
+
+    <ul>
+
+        <li>
+            <strong>p50</strong> =
+            median response time.
+        </li>
+
+        <li>
+            <strong>p90</strong> =
+            response time below which approximately
+            90% of requests completed.
+        </li>
+
+        <li>
+            <strong>p95</strong> =
+            response time below which approximately
+            95% of requests completed.
+        </li>
+
+        <li>
+            <strong>p99</strong> =
+            response time below which approximately
+            99% of requests completed.
+        </li>
+
+        <li>
+            <strong>Max</strong> =
+            maximum recorded response time.
+        </li>
+
+        <li>
+            <strong>Error %</strong> =
+            failed endpoint requests as a percentage
+            of endpoint requests.
+        </li>
+
+        <li>
+            <strong>RPS</strong> =
+            requests processed per second,
+            when available in the source JSON.
+        </li>
+
+        <li>
+            <strong>CHECK</strong> =
+            no failed requests but p95 is at/above
+            the configured 2000 ms target.
+        </li>
+
+        <li>
+            <strong>FAILED</strong> =
+            one or more requests failed.
+        </li>
+
+        <li>
+            <strong>OBS</strong> =
+            UI Web Vital threshold exceeded.
+            This is a performance observation and does
+            not fail the functional UI gate.
+        </li>
+
+    </ul>
+
+    <strong>Endpoint attribution:</strong>
+
+    The endpoint-level matrix is the primary section
+    for identifying which API is associated with
+    increased response time, errors, or throughput
+    changes as VUs and iterations increase.
+
+    <br><br>
+
+    <strong>Source timestamp:</strong>
+
+    2026-09-16T13:16:34.234Z
+
+    <br><br>
+
+    <strong>Report generation:</strong>
+
+    This report is generated from existing JSON
+    performance result files. Running this Python
+    script does not execute a new k6 workload.
+
+</div>
+
+
+
+
+    <h2>⚠️ Missing Result Files</h2>
+
+    <div class="callout">
+
+        Missing workload result files were skipped.
+
+        This means the report does not represent
+        the missing workload stage.
+
+    </div>
+
+    <div class="table-wrap">
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Type</th>
+                    <th>File</th>
+                    <th>Status</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                
+            <tr>
+                <td>UI</td>
+                <td>ui_25vu_5iter.json</td>
+                <td>Missing</td>
+            </tr>
+            
+
+            </tbody>
+
+        </table>
+
+    </div>
+    
+
+
+<footer>
+
+    Generated by
+    build_navigation_report.py
+
+    <br>
+
+    Latest source test timestamp:
+    2026-09-16T13:16:34.234Z
+
+    <br>
+
+    API runs included:
+    1 VU / 1 iter, 1 VU / 5 iters, 5 VUs / 5 iters, 25 VUs / 5 iters
+
+    <br>
+
+    UI runs included:
+    UI 1 VU / 1 iter, UI 1 VU / 5 iters, UI 5 VUs / 5 iters
+
+    <br>
+
+    API endpoint definitions:
+    38
+
+    <br>
+
+    No cookies, tokens, passwords
+    or authorization values are displayed.
+
+</footer>
+
+
+</body>
+
+</html>
